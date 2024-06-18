@@ -98,258 +98,6 @@
   "resources": {
     "resources": [
       {
-        "alwaysLoaded": false,
-        "file": "assets/وجوه/ميت2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\وجوه\\ميت2.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "desktop-icon-512.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "desktop-icon-512.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "android-icon-192.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "android-icon-192.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "android-icon-144.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "android-icon-144.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "android-icon-96.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "android-icon-96.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "android-icon-72.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "android-icon-72.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "android-icon-48.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "android-icon-48.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "android-icon-36.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "android-icon-36.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "android-windowSplashScreenAnimatedIcon.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "android-windowSplashScreenAnimatedIcon.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "ios-icon-1024.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "ios-icon-1024.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "ios-icon-180.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "ios-icon-180.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "ios-icon-167.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "ios-icon-167.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "ios-icon-152.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "ios-icon-152.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "ios-icon-144.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "ios-icon-144.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "ios-icon-120.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "ios-icon-120.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "ios-icon-114.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "ios-icon-114.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "ios-icon-100.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "ios-icon-100.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "ios-icon-87.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "ios-icon-87.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "ios-icon-80.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "ios-icon-80.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "ios-icon-76.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "ios-icon-76.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "ios-icon-72.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "ios-icon-72.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "ios-icon-60.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "ios-icon-60.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "ios-icon-58.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "ios-icon-58.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "ios-icon-57.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "ios-icon-57.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "ios-icon-50.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "ios-icon-50.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "ios-icon-40.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "ios-icon-40.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "ios-icon-29.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "ios-icon-29.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "ios-icon-20.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "ios-icon-20.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
         "file": "assets/بداية.wav",
         "kind": "audio",
         "metadata": "",
@@ -361,145 +109,10 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/خلفية.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\خلفية.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/وجه.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\وجه.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/وجوه/يبكي1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\وجوه\\يبكي1.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/وجوه/يبكي2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\وجوه\\يبكي2.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/وجوه/يبكي3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\وجوه\\يبكي3.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/وجوه/ميت1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\وجوه\\ميت1.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/وجوه/ميت3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\وجوه\\ميت3.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/أعلام/فلسطين.png",
         "kind": "image",
         "metadata": "",
         "name": "assets\\أعلام\\فلسطين.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/أعلام/السودان.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\أعلام\\السودان.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/أعلام/إسرائيل.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\أعلام\\إسرائيل.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/أعلام/أوكرانيا.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\أعلام\\أوكرانيا.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/لا_شيء.jpg",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\لا_شيء.jpg",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/صور/فلسطين.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\صور\\فلسطين.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/صور/السودان.jpg",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\صور\\السودان.jpg",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/صور/إسرائيل.jpg",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\صور\\إسرائيل.jpg",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/صور/أوكرانيا.jpg",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\صور\\أوكرانيا.jpg",
         "smoothed": true,
         "userAdded": true
       },
@@ -549,6 +162,96 @@
         "metadata": "",
         "name": "assets\\الشعار.jpg",
         "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "openart-image_HuuV6Ee2_1718727892119_raw.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "openart-image_HuuV6Ee2_1718727892119_raw.jpg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Phoenix-normal29.webp",
+        "kind": "image",
+        "metadata": "",
+        "name": "Phoenix-normal29.webp",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Apollo_and_Document_2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Apollo_and_Document_2",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite3",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "arrow_s.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "arrow_s.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "line_horizontal.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "line_horizontal.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "line_horizontal2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "line_horizontal2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/line_horizontal2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/line_horizontal2.png\"}",
+        "name": "line_horizontal2",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/line_horizontal_blue.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\line_horizontal_blue.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/line_horizontal_red.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/line_horizontal_red.png\",\"extension\":\".png\"}",
+        "name": "assets\\line_horizontal_red.png",
+        "smoothed": false,
         "userAdded": true
       }
     ],

@@ -18,16 +18,13 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.5800593381926561,
+    "zoomFactor": 0.5611375933252962,
     "windowMask": true
   },
   "objectsGroups": [
     {
       "name": "النصوص",
       "objects": [
-        {
-          "name": "الرصيد"
-        },
         {
           "name": "التحكم"
         }
@@ -61,47 +58,14 @@
     {
       "angle": 0,
       "customSize": true,
-      "depth": 3,
-      "height": 150,
-      "keepRatio": true,
-      "layer": "اللعبة",
-      "name": "وجه",
-      "persistentUuid": "8ae05c9d-8f20-4480-92bc-46f3e6144d3b",
-      "width": 150,
-      "x": 712,
-      "y": 150,
-      "zOrder": 0,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 60,
-      "layer": "الواجهة",
-      "name": "الرصيد",
-      "persistentUuid": "e90bb05f-35ed-4c65-a9fc-26e829058463",
-      "width": 312,
-      "x": 943,
-      "y": 100,
-      "zOrder": 14,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
       "depth": 1,
       "height": 92,
       "layer": "الأعلام",
       "name": "خط_أحمر",
       "persistentUuid": "4f74333e-b081-4290-b237-c960abb43372",
       "width": 24,
-      "x": 880,
-      "y": 300,
+      "x": 417,
+      "y": 466,
       "zOrder": 15,
       "numberProperties": [],
       "stringProperties": [],
@@ -111,31 +75,14 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 112,
-      "keepRatio": true,
-      "layer": "الواجهة",
-      "name": "العداد",
-      "persistentUuid": "51c4708a-5e5e-4f2d-83f9-c0e48fdd7948",
-      "width": 82,
-      "x": 506,
-      "y": 532,
-      "zOrder": 21,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 0,
-      "height": 720,
+      "height": 1088,
       "keepRatio": true,
       "layer": "",
       "name": "الخلفية",
       "persistentUuid": "bcaaf4f4-3ac4-4730-9cca-5d486d014b90",
-      "width": 1280,
-      "x": 0,
-      "y": 0,
+      "width": 1936,
+      "x": -4,
+      "y": -5,
       "zOrder": 25,
       "numberProperties": [],
       "stringProperties": [],
@@ -144,335 +91,90 @@
     {
       "angle": 0,
       "customSize": true,
-      "depth": 1,
-      "height": 322,
-      "layer": "اللعبة",
-      "name": "التلفاز",
-      "persistentUuid": "c040623d-3cb3-4645-84d9-371739dc15c2",
-      "width": 555,
-      "x": 48,
-      "y": 62,
+      "depth": 3,
+      "height": 488,
+      "keepRatio": true,
+      "layer": "",
+      "name": "NewSprite",
+      "persistentUuid": "acc11c32-f2aa-40be-b068-d221bedbf65b",
+      "width": 651,
+      "x": 64,
+      "y": 677,
       "zOrder": 26,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1.3863636363636358,
+      "height": 488,
+      "keepRatio": true,
+      "layer": "",
+      "name": "NewSprite2",
+      "persistentUuid": "0f5f7a18-5938-4fa3-bff0-f182e61ffe55",
+      "width": 794.3863636363633,
+      "x": 1065,
+      "y": 611,
+      "zOrder": 27,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 18,
+      "height": 520,
+      "keepRatio": true,
+      "layer": "",
+      "name": "NewSprite3",
+      "persistentUuid": "63bdf10e-0bbe-4a9a-92bb-12934fa63732",
+      "width": 1090,
+      "x": 377,
+      "y": 660,
+      "zOrder": 28,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 522,
+      "keepRatio": true,
+      "layer": "",
+      "name": "NewSprite5",
+      "persistentUuid": "8a6742f0-882c-4b34-bd07-12d95274d1e3",
+      "width": 592,
+      "x": 424,
+      "y": 658,
+      "zOrder": 29,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 542,
+      "keepRatio": true,
+      "layer": "",
+      "name": "NewSprite6",
+      "persistentUuid": "affce8f2-5a85-4f7b-b04c-0d6bfd2ec15d",
+      "width": 554,
+      "x": 855,
+      "y": 646,
+      "zOrder": 30,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
     }
   ],
   "objects": [
-    {
-      "adaptCollisionMaskAutomatically": false,
-      "assetStoreId": "",
-      "name": "وجه",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "عادي",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 1,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\وجه.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "يبكي",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 1,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\وجوه\\يبكي1.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\وجوه\\يبكي2.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\وجوه\\يبكي3.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "ميت",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 1,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\وجوه\\ميت1.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\وجوه\\ميت2.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\وجوه\\ميت3.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": false,
-      "assetStoreId": "",
-      "name": "علم",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [
-        {
-          "folded": true,
-          "name": "وصل",
-          "type": "boolean",
-          "value": false
-        },
-        {
-          "folded": true,
-          "name": "تطبيع",
-          "type": "boolean",
-          "value": false
-        },
-        {
-          "folded": true,
-          "name": "مضاعفة",
-          "type": "number",
-          "value": 1
-        }
-      ],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "فلسطين",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\أعلام\\فلسطين.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 8,
-                    "y": 8
-                  },
-                  "centerPoint": {
-                    "automatic": false,
-                    "name": "centre",
-                    "x": 8,
-                    "y": 8
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "السودان",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\أعلام\\السودان.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 8,
-                    "y": 8
-                  },
-                  "centerPoint": {
-                    "automatic": false,
-                    "name": "centre",
-                    "x": 8,
-                    "y": 8
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "إسرائيل",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\أعلام\\إسرائيل.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 8,
-                    "y": 8
-                  },
-                  "centerPoint": {
-                    "automatic": false,
-                    "name": "centre",
-                    "x": 8,
-                    "y": 8
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "أوكرانيا",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\أعلام\\أوكرانيا.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 8,
-                    "y": 8
-                  },
-                  "centerPoint": {
-                    "automatic": false,
-                    "name": "centre",
-                    "x": 8,
-                    "y": 8
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
     {
       "assetStoreId": "",
       "height": 8,
@@ -529,47 +231,6 @@
         "font": "",
         "textAlignment": "center",
         "characterSize": 40,
-        "color": "0;0;0"
-      }
-    },
-    {
-      "assetStoreId": "",
-      "bold": true,
-      "italic": false,
-      "name": "الرصيد",
-      "smoothed": true,
-      "type": "TextObject::Text",
-      "underlined": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "string": "0 :💵",
-      "font": "",
-      "textAlignment": "right",
-      "characterSize": 50,
-      "color": {
-        "b": 0,
-        "g": 0,
-        "r": 0
-      },
-      "content": {
-        "bold": true,
-        "isOutlineEnabled": false,
-        "isShadowEnabled": false,
-        "italic": false,
-        "outlineColor": "255;255;255",
-        "outlineThickness": 2,
-        "shadowAngle": 90,
-        "shadowBlurRadius": 2,
-        "shadowColor": "0;0;0",
-        "shadowDistance": 4,
-        "shadowOpacity": 127,
-        "smoothed": true,
-        "underlined": false,
-        "text": "0 :💵",
-        "font": "",
-        "textAlignment": "right",
-        "characterSize": 50,
         "color": "0;0;0"
       }
     },
@@ -643,7 +304,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\خلفية.png",
+                  "image": "openart-image_HuuV6Ee2_1718727892119_raw.jpg",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -663,16 +324,16 @@
                         "y": 0
                       },
                       {
-                        "x": 480,
+                        "x": 1024,
                         "y": 0
                       },
                       {
-                        "x": 480,
-                        "y": 270
+                        "x": 1024,
+                        "y": 1024
                       },
                       {
                         "x": 0,
-                        "y": 270
+                        "y": 1024
                       }
                     ]
                   ]
@@ -686,7 +347,7 @@
     {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
-      "name": "التلفاز",
+      "name": "NewSprite",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
@@ -703,7 +364,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\لا_شيء.jpg",
+                  "image": "Phoenix-normal29.webp",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -720,19 +381,19 @@
                     [
                       {
                         "x": 0,
-                        "y": 0
+                        "y": 18
                       },
                       {
-                        "x": 1024,
-                        "y": 0
+                        "x": 125,
+                        "y": 18
                       },
                       {
-                        "x": 1024,
-                        "y": 576
+                        "x": 125,
+                        "y": 160
                       },
                       {
                         "x": 0,
-                        "y": 576
+                        "y": 160
                       }
                     ]
                   ]
@@ -740,9 +401,143 @@
               ]
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "NewSprite2",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
         {
-          "name": "فلسطين",
+          "name": "Apollo_and_Document_2",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Apollo_and_Document_2",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 113,
+                        "y": 1
+                      },
+                      {
+                        "x": 224,
+                        "y": 1
+                      },
+                      {
+                        "x": 224,
+                        "y": 192
+                      },
+                      {
+                        "x": 113,
+                        "y": 192
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "NewSprite3",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "NewSprite3",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite3",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 2,
+                        "y": 12
+                      },
+                      {
+                        "x": 30,
+                        "y": 12
+                      },
+                      {
+                        "x": 30,
+                        "y": 20
+                      },
+                      {
+                        "x": 2,
+                        "y": 20
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "NewSprite4",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -751,7 +546,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\صور\\فلسطين.png",
+                  "image": "arrow_s.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -767,20 +562,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 0,
-                        "y": 0
+                        "x": 14,
+                        "y": 8
                       },
                       {
-                        "x": 1024,
-                        "y": 0
+                        "x": 50,
+                        "y": 8
                       },
                       {
-                        "x": 1024,
-                        "y": 576
+                        "x": 50,
+                        "y": 56
                       },
                       {
-                        "x": 0,
-                        "y": 576
+                        "x": 14,
+                        "y": 56
                       }
                     ]
                   ]
@@ -788,18 +583,31 @@
               ]
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "NewSprite5",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
         {
-          "name": "السودان",
+          "name": "line_horizontal2",
           "useMultipleDirections": false,
           "directions": [
             {
               "looping": false,
+              "metadata": "{\"pskl\":{}}",
               "timeBetweenFrames": 0.08,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\صور\\السودان.jpg",
+                  "image": "assets\\line_horizontal_blue.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -815,20 +623,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 0,
-                        "y": 0
+                        "x": 8,
+                        "y": 28
                       },
                       {
-                        "x": 1024,
-                        "y": 0
+                        "x": 56,
+                        "y": 28
                       },
                       {
-                        "x": 1024,
-                        "y": 576
+                        "x": 56,
+                        "y": 36
                       },
                       {
-                        "x": 0,
-                        "y": 576
+                        "x": 8,
+                        "y": 36
                       }
                     ]
                   ]
@@ -836,18 +644,31 @@
               ]
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "NewSprite6",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
         {
-          "name": "إسرائيل",
+          "name": "line_horizontal2",
           "useMultipleDirections": false,
           "directions": [
             {
               "looping": false,
+              "metadata": "{\"pskl\":{}}",
               "timeBetweenFrames": 0.08,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\صور\\إسرائيل.jpg",
+                  "image": "assets\\line_horizontal_red.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -863,68 +684,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 0,
-                        "y": 0
+                        "x": 8,
+                        "y": 28
                       },
                       {
-                        "x": 1024,
-                        "y": 0
+                        "x": 56,
+                        "y": 28
                       },
                       {
-                        "x": 1024,
-                        "y": 576
+                        "x": 56,
+                        "y": 36
                       },
                       {
-                        "x": 0,
-                        "y": 576
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "أوكرانيا",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\صور\\أوكرانيا.jpg",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 0,
-                        "y": 0
-                      },
-                      {
-                        "x": 1024,
-                        "y": 0
-                      },
-                      {
-                        "x": 1024,
-                        "y": 576
-                      },
-                      {
-                        "x": 0,
-                        "y": 576
+                        "x": 8,
+                        "y": 36
                       }
                     ]
                   ]
@@ -943,25 +716,31 @@
         "objectName": "الخلفية"
       },
       {
-        "objectName": "وجه"
-      },
-      {
-        "objectName": "علم"
-      },
-      {
-        "objectName": "التلفاز"
-      },
-      {
         "objectName": "خط_أحمر"
+      },
+      {
+        "objectName": "NewSprite3"
+      },
+      {
+        "objectName": "NewSprite5"
+      },
+      {
+        "objectName": "NewSprite6"
       },
       {
         "objectName": "التحكم"
       },
       {
-        "objectName": "الرصيد"
+        "objectName": "NewSprite"
       },
       {
         "objectName": "العداد"
+      },
+      {
+        "objectName": "NewSprite2"
+      },
+      {
+        "objectName": "NewSprite4"
       }
     ]
   },
