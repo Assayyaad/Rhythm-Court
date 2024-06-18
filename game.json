@@ -1,0 +1,594 @@
+{
+  "firstLayout": "",
+  "gdVersion": {
+    "build": 99,
+    "major": 4,
+    "minor": 0,
+    "revision": 0
+  },
+  "properties": {
+    "adaptGameResolutionAtRuntime": false,
+    "antialiasingMode": "MSAA",
+    "antialisingEnabledOnMobile": false,
+    "folderProject": true,
+    "orientation": "landscape",
+    "packageName": "pro.thealpha.rhythm",
+    "pixelsRounding": false,
+    "projectUuid": "4bed363a-3d28-4215-8f3c-79fcc07ac640",
+    "scaleMode": "linear",
+    "sizeOnStartupMode": "",
+    "templateSlug": "",
+    "useExternalSourceFiles": false,
+    "version": "1.0.0",
+    "name": "Rhythm Court",
+    "description": "",
+    "author": "Assayyaad",
+    "windowWidth": 1920,
+    "windowHeight": 1080,
+    "latestCompilationDirectory": "",
+    "maxFPS": 60,
+    "minFPS": 30,
+    "verticalSync": false,
+    "platformSpecificAssets": {
+      "android-icon-144": "img\\android-icon-144.png",
+      "android-icon-192": "img\\android-icon-192.png",
+      "android-icon-36": "img\\android-icon-36.png",
+      "android-icon-48": "img\\android-icon-48.png",
+      "android-icon-72": "img\\android-icon-72.png",
+      "android-icon-96": "img\\android-icon-96.png",
+      "android-windowSplashScreenAnimatedIcon": "img\\android-windowSplashScreenAnimatedIcon.png",
+      "desktop-icon-512": "img\\desktop-icon-512.png",
+      "ios-icon-100": "img\\ios-icon-100.png",
+      "ios-icon-1024": "img\\ios-icon-1024.png",
+      "ios-icon-114": "img\\ios-icon-114.png",
+      "ios-icon-120": "img\\ios-icon-120.png",
+      "ios-icon-144": "img\\ios-icon-144.png",
+      "ios-icon-152": "img\\ios-icon-152.png",
+      "ios-icon-167": "img\\ios-icon-167.png",
+      "ios-icon-180": "img\\ios-icon-180.png",
+      "ios-icon-20": "img\\ios-icon-20.png",
+      "ios-icon-29": "img\\ios-icon-29.png",
+      "ios-icon-40": "img\\ios-icon-40.png",
+      "ios-icon-50": "img\\ios-icon-50.png",
+      "ios-icon-57": "img\\ios-icon-57.png",
+      "ios-icon-58": "img\\ios-icon-58.png",
+      "ios-icon-60": "img\\ios-icon-60.png",
+      "ios-icon-72": "img\\ios-icon-72.png",
+      "ios-icon-76": "img\\ios-icon-76.png",
+      "ios-icon-80": "img\\ios-icon-80.png",
+      "ios-icon-87": "img\\ios-icon-87.png",
+      "liluo-thumbnail": "assets\\الشعار.jpg"
+    },
+    "loadingScreen": {
+      "backgroundColor": 4868682,
+      "backgroundFadeInDuration": 0.2,
+      "backgroundImageResourceName": "assets\\الشعار.jpg",
+      "gdevelopLogoStyle": "dark-colored",
+      "logoAndProgressFadeInDuration": 0.2,
+      "logoAndProgressLogoFadeInDelay": 0,
+      "minDuration": 2.5,
+      "progressBarColor": 16777215,
+      "progressBarHeight": 10,
+      "progressBarMaxWidth": 200,
+      "progressBarMinWidth": 40,
+      "progressBarWidthPercent": 30,
+      "showGDevelopSplash": true,
+      "showProgressBar": true
+    },
+    "watermark": {
+      "placement": "bottom-left",
+      "showWatermark": false
+    },
+    "authorIds": [
+      "P2R4bcPNinTzpRBIMn932XX2NOg2"
+    ],
+    "authorUsernames": [
+      "nabil_alsaiad"
+    ],
+    "categories": [],
+    "playableDevices": [],
+    "extensionProperties": [],
+    "platforms": [
+      {
+        "name": "GDevelop JS platform"
+      }
+    ],
+    "currentPlatform": "GDevelop JS platform"
+  },
+  "resources": {
+    "resources": [
+      {
+        "alwaysLoaded": false,
+        "file": "assets/وجوه/ميت2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\وجوه\\ميت2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "desktop-icon-512.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "desktop-icon-512.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "android-icon-192.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "android-icon-192.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "android-icon-144.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "android-icon-144.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "android-icon-96.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "android-icon-96.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "android-icon-72.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "android-icon-72.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "android-icon-48.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "android-icon-48.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "android-icon-36.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "android-icon-36.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "android-windowSplashScreenAnimatedIcon.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "android-windowSplashScreenAnimatedIcon.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-1024.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-1024.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-180.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-180.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-167.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-167.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-152.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-152.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-144.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-144.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-120.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-120.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-114.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-114.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-100.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-100.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-87.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-87.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-80.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-80.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-76.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-76.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-72.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-72.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-60.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-60.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-58.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-58.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-57.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-57.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-50.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-50.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-40.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-40.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-29.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-29.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-20.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-20.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/بداية.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\بداية.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/خلفية.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\خلفية.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/وجه.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\وجه.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/وجوه/يبكي1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\وجوه\\يبكي1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/وجوه/يبكي2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\وجوه\\يبكي2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/وجوه/يبكي3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\وجوه\\يبكي3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/وجوه/ميت1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\وجوه\\ميت1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/وجوه/ميت3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\وجوه\\ميت3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/أعلام/فلسطين.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\أعلام\\فلسطين.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/أعلام/السودان.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\أعلام\\السودان.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/أعلام/إسرائيل.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\أعلام\\إسرائيل.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/أعلام/أوكرانيا.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\أعلام\\أوكرانيا.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/لا_شيء.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\لا_شيء.jpg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/صور/فلسطين.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\صور\\فلسطين.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/صور/السودان.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\صور\\السودان.jpg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/صور/إسرائيل.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\صور\\إسرائيل.jpg",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/صور/أوكرانيا.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\صور\\أوكرانيا.jpg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/أحمر.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\أحمر.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/صحيح.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\صحيح.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/خطأ.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\خطأ.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/فات.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\فات.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/الشعار.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\الشعار.jpg",
+        "smoothed": true,
+        "userAdded": true
+      }
+    ],
+    "resourceFolders": []
+  },
+  "objects": [],
+  "objectsFolderStructure": {
+    "folderName": "__ROOT"
+  },
+  "objectsGroups": [],
+  "variables": [],
+  "layouts": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/game"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/test"
+    }
+  ],
+  "externalEvents": [],
+  "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/arraytools"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/shakeobject"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/choose"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/repeateveryxseconds"
+    }
+  ],
+  "externalLayouts": [],
+  "externalSourceFiles": []
+}
