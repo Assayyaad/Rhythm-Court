@@ -18,19 +18,10 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.5611375933252962,
+    "zoomFactor": 0.4753944171546968,
     "windowMask": true
   },
-  "objectsGroups": [
-    {
-      "name": "النصوص",
-      "objects": [
-        {
-          "name": "التحكم"
-        }
-      ]
-    }
-  ],
+  "objectsGroups": [],
   "variables": [
     {
       "name": "بدأ_اللعب",
@@ -61,11 +52,11 @@
       "depth": 1,
       "height": 92,
       "layer": "الأعلام",
-      "name": "خط_أحمر",
+      "name": "RedLine",
       "persistentUuid": "4f74333e-b081-4290-b237-c960abb43372",
       "width": 24,
-      "x": 417,
-      "y": 466,
+      "x": 511,
+      "y": 412,
       "zOrder": 15,
       "numberProperties": [],
       "stringProperties": [],
@@ -74,16 +65,15 @@
     {
       "angle": 0,
       "customSize": true,
-      "depth": 1,
-      "height": 1088,
-      "keepRatio": true,
+      "depth": 0.9917355371900827,
+      "height": 1080,
       "layer": "",
-      "name": "الخلفية",
+      "name": "Background",
       "persistentUuid": "bcaaf4f4-3ac4-4730-9cca-5d486d014b90",
-      "width": 1936,
-      "x": -4,
-      "y": -5,
-      "zOrder": 25,
+      "width": 1920,
+      "x": 0,
+      "y": 0,
+      "zOrder": -10,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -95,12 +85,12 @@
       "height": 488,
       "keepRatio": true,
       "layer": "",
-      "name": "NewSprite",
+      "name": "Player",
       "persistentUuid": "acc11c32-f2aa-40be-b068-d221bedbf65b",
       "width": 651,
-      "x": 64,
-      "y": 677,
-      "zOrder": 26,
+      "x": 60,
+      "y": 675,
+      "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -110,14 +100,29 @@
       "customSize": true,
       "depth": 1.3863636363636358,
       "height": 488,
-      "keepRatio": true,
       "layer": "",
-      "name": "NewSprite2",
+      "name": "Opponent",
       "persistentUuid": "0f5f7a18-5938-4fa3-bff0-f182e61ffe55",
-      "width": 794.3863636363633,
-      "x": 1065,
-      "y": 611,
-      "zOrder": 27,
+      "width": 700,
+      "x": 1237,
+      "y": 675,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Counter",
+      "persistentUuid": "670600b7-1575-47f3-9fe2-6f97bc00804d",
+      "width": 0,
+      "x": 1026,
+      "y": 455,
+      "zOrder": 31,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -125,16 +130,31 @@
     {
       "angle": 0,
       "customSize": true,
-      "depth": 18,
-      "height": 520,
+      "depth": 203.5714285714286,
+      "height": 70,
+      "layer": "",
+      "name": "BlueBar",
+      "persistentUuid": "5f985cc4-dd5e-40cc-9d1f-87792a19993e",
+      "width": 850,
+      "x": 580,
+      "y": 240,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
       "keepRatio": true,
       "layer": "",
-      "name": "NewSprite3",
-      "persistentUuid": "63bdf10e-0bbe-4a9a-92bb-12934fa63732",
-      "width": 1090,
-      "x": 377,
-      "y": 660,
-      "zOrder": 28,
+      "name": "BarArrow",
+      "persistentUuid": "d2ac3cc4-4ba1-4af6-bf3d-6a8dc180735f",
+      "width": 0,
+      "x": 972,
+      "y": 317,
+      "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -142,33 +162,15 @@
     {
       "angle": 0,
       "customSize": true,
-      "depth": 1,
-      "height": 522,
-      "keepRatio": true,
+      "depth": 0,
+      "height": 70,
       "layer": "",
-      "name": "NewSprite5",
-      "persistentUuid": "8a6742f0-882c-4b34-bd07-12d95274d1e3",
-      "width": 592,
-      "x": 424,
-      "y": 658,
-      "zOrder": 29,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 542,
-      "keepRatio": true,
-      "layer": "",
-      "name": "NewSprite6",
-      "persistentUuid": "affce8f2-5a85-4f7b-b04c-0d6bfd2ec15d",
-      "width": 554,
-      "x": 855,
-      "y": 646,
-      "zOrder": 30,
+      "name": "RedBar",
+      "persistentUuid": "6f3b8c63-520f-4793-bf5c-237482a4d858",
+      "width": 850,
+      "x": 580,
+      "y": 240,
+      "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -178,7 +180,7 @@
     {
       "assetStoreId": "",
       "height": 8,
-      "name": "خط_أحمر",
+      "name": "RedLine",
       "texture": "assets\\أحمر.png",
       "type": "TiledSpriteObject::TiledSprite",
       "width": 8,
@@ -187,107 +189,9 @@
       "behaviors": []
     },
     {
-      "assetStoreId": "",
-      "bold": false,
-      "italic": false,
-      "name": "التحكم",
-      "smoothed": true,
-      "type": "TextObject::Text",
-      "underlined": false,
-      "variables": [
-        {
-          "folded": true,
-          "name": "القيمة",
-          "type": "string",
-          "value": "⌨️👉=😭"
-        }
-      ],
-      "effects": [],
-      "behaviors": [],
-      "string": "⌨️👉=😭",
-      "font": "",
-      "textAlignment": "center",
-      "characterSize": 40,
-      "color": {
-        "b": 0,
-        "g": 0,
-        "r": 0
-      },
-      "content": {
-        "bold": false,
-        "isOutlineEnabled": false,
-        "isShadowEnabled": false,
-        "italic": false,
-        "outlineColor": "255;255;255",
-        "outlineThickness": 2,
-        "shadowAngle": 90,
-        "shadowBlurRadius": 2,
-        "shadowColor": "0;0;0",
-        "shadowDistance": 4,
-        "shadowOpacity": 127,
-        "smoothed": true,
-        "underlined": false,
-        "text": "⌨️👉=😭",
-        "font": "",
-        "textAlignment": "center",
-        "characterSize": 40,
-        "color": "0;0;0"
-      }
-    },
-    {
-      "assetStoreId": "",
-      "bold": true,
-      "italic": true,
-      "name": "العداد",
-      "smoothed": true,
-      "type": "TextObject::Text",
-      "underlined": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [
-        {
-          "name": "ShakeObject_PositionAngle",
-          "type": "ShakeObject::ShakeObject_PositionAngle"
-        },
-        {
-          "name": "Tween",
-          "type": "Tween::TweenBehavior"
-        }
-      ],
-      "string": "1",
-      "font": "",
-      "textAlignment": "center",
-      "characterSize": 120,
-      "color": {
-        "b": 0,
-        "g": 0,
-        "r": 0
-      },
-      "content": {
-        "bold": true,
-        "isOutlineEnabled": true,
-        "isShadowEnabled": false,
-        "italic": true,
-        "outlineColor": "255;255;255",
-        "outlineThickness": 2,
-        "shadowAngle": 90,
-        "shadowBlurRadius": 2,
-        "shadowColor": "0;0;0",
-        "shadowDistance": 4,
-        "shadowOpacity": 127,
-        "smoothed": true,
-        "underlined": false,
-        "text": "1",
-        "font": "",
-        "textAlignment": "center",
-        "characterSize": 120,
-        "color": "0;0;0"
-      }
-    },
-    {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
-      "name": "الخلفية",
+      "name": "Background",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
@@ -347,7 +251,7 @@
     {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
-      "name": "NewSprite",
+      "name": "Player",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
@@ -407,7 +311,7 @@
     {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
-      "name": "NewSprite2",
+      "name": "Opponent",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
@@ -464,283 +368,22 @@
           ]
         }
       ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "NewSprite3",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "NewSprite3",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "NewSprite3",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 2,
-                        "y": 12
-                      },
-                      {
-                        "x": 30,
-                        "y": 12
-                      },
-                      {
-                        "x": 30,
-                        "y": 20
-                      },
-                      {
-                        "x": 2,
-                        "y": 20
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "NewSprite4",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "arrow_s.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 14,
-                        "y": 8
-                      },
-                      {
-                        "x": 50,
-                        "y": 8
-                      },
-                      {
-                        "x": 50,
-                        "y": 56
-                      },
-                      {
-                        "x": 14,
-                        "y": 56
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "NewSprite5",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "line_horizontal2",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\line_horizontal_blue.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 8,
-                        "y": 28
-                      },
-                      {
-                        "x": 56,
-                        "y": 28
-                      },
-                      {
-                        "x": 56,
-                        "y": 36
-                      },
-                      {
-                        "x": 8,
-                        "y": 36
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "NewSprite6",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "line_horizontal2",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\line_horizontal_red.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 8,
-                        "y": 28
-                      },
-                      {
-                        "x": 56,
-                        "y": 28
-                      },
-                      {
-                        "x": 56,
-                        "y": 36
-                      },
-                      {
-                        "x": 8,
-                        "y": 36
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
     }
   ],
   "objectsFolderStructure": {
     "folderName": "__ROOT",
     "children": [
       {
-        "objectName": "الخلفية"
+        "objectName": "Background"
       },
       {
-        "objectName": "خط_أحمر"
+        "objectName": "RedLine"
       },
       {
-        "objectName": "NewSprite3"
+        "objectName": "Player"
       },
       {
-        "objectName": "NewSprite5"
-      },
-      {
-        "objectName": "NewSprite6"
-      },
-      {
-        "objectName": "التحكم"
-      },
-      {
-        "objectName": "NewSprite"
-      },
-      {
-        "objectName": "العداد"
-      },
-      {
-        "objectName": "NewSprite2"
-      },
-      {
-        "objectName": "NewSprite4"
+        "objectName": "Opponent"
       }
     ]
   },
@@ -776,36 +419,9 @@
                 "yes",
                 ""
               ]
-            },
-            {
-              "type": {
-                "value": "ResetObjectTimer"
-              },
-              "parameters": [
-                "وجه",
-                "\"إعادة ضبط\""
-              ]
             }
           ],
           "events": [
-            {
-              "type": "BuiltinCommonInstructions::ForEach",
-              "object": "التحكم",
-              "conditions": [],
-              "actions": [
-                {
-                  "type": {
-                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-                  },
-                  "parameters": [
-                    "التحكم",
-                    "Text",
-                    "=",
-                    "التحكم.القيمة"
-                  ]
-                }
-              ]
-            },
             {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [],
@@ -815,11 +431,11 @@
                     "value": "MettreXY"
                   },
                   "parameters": [
-                    "العداد",
+                    "Counter",
                     "=",
-                    "(SceneWindowWidth() * 0.5) - (العداد.Width() * 0.5)",
+                    "(SceneWindowWidth() * 0.5) - (Counter.Width() * 0.5)",
                     "=",
-                    "(SceneWindowHeight() * 0.5) - (العداد.Height() * 0.5)"
+                    "(SceneWindowHeight() * 0.5) - (Counter.Height() * 0.5)"
                   ]
                 },
                 {
@@ -827,7 +443,7 @@
                     "value": "TextContainerCapability::TextContainerBehavior::SetValue"
                   },
                   "parameters": [
-                    "العداد",
+                    "Counter",
                     "Text",
                     "=",
                     "\"3\""
@@ -850,7 +466,7 @@
                     "value": "ShakeObject::ShakeObject_PositionAngle::ShakeObject_PositionAngle"
                   },
                   "parameters": [
-                    "العداد",
+                    "Counter",
                     "ShakeObject_PositionAngle",
                     "0.2",
                     "2",
@@ -874,7 +490,7 @@
                     "value": "TextContainerCapability::TextContainerBehavior::SetValue"
                   },
                   "parameters": [
-                    "العداد",
+                    "Counter",
                     "Text",
                     "=",
                     "\"2\""
@@ -897,7 +513,7 @@
                     "value": "ShakeObject::ShakeObject_PositionAngle::ShakeObject_PositionAngle"
                   },
                   "parameters": [
-                    "العداد",
+                    "Counter",
                     "ShakeObject_PositionAngle",
                     "0.2",
                     "4",
@@ -921,7 +537,7 @@
                     "value": "TextContainerCapability::TextContainerBehavior::SetValue"
                   },
                   "parameters": [
-                    "العداد",
+                    "Counter",
                     "Text",
                     "=",
                     "\"1\""
@@ -944,7 +560,7 @@
                     "value": "ShakeObject::ShakeObject_PositionAngle::ShakeObject_PositionAngle"
                   },
                   "parameters": [
-                    "العداد",
+                    "Counter",
                     "ShakeObject_PositionAngle",
                     "0.2",
                     "7",
@@ -968,7 +584,7 @@
                     "value": "Delete"
                   },
                   "parameters": [
-                    "العداد",
+                    "Counter",
                     ""
                   ]
                 },
@@ -1008,35 +624,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "name": "تحديث",
-          "source": "",
-          "type": "BuiltinCommonInstructions::Group",
-          "events": [
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": [
-                {
-                  "type": {
-                    "value": "TextObject::String"
-                  },
-                  "parameters": [
-                    "الرصيد",
-                    "=",
-                    "VariableString(الرصيد) + \" :💵\""
-                  ]
-                }
-              ]
-            }
-          ],
-          "parameters": []
-        },
-        {
-          "colorB": 228,
-          "colorG": 176,
-          "colorR": 74,
-          "creationTime": 0,
-          "name": "اللاعب",
+          "name": "Player",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
@@ -1045,8 +633,7 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "folded": true,
-              "name": "إعادة الضبط",
+              "name": "Re-set",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
               "events": [
@@ -1118,7 +705,7 @@
                         "value": "TiledSpriteObject::SetColor"
                       },
                       "parameters": [
-                        "خط_أحمر",
+                        "RedLine",
                         "\"255;255;255\""
                       ]
                     }
@@ -1132,7 +719,7 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "name": "الأعلام",
+              "name": "Flags",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
               "events": [
@@ -1446,7 +1033,7 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "name": "التحكم",
+              "name": "Controls",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
               "events": [
@@ -1558,7 +1145,7 @@
                             "value": "TiledSpriteObject::SetColor"
                           },
                           "parameters": [
-                            "خط_أحمر",
+                            "RedLine",
                             "\"120;120;120\""
                           ]
                         }
@@ -1763,7 +1350,7 @@
                             "value": "TiledSpriteObject::SetColor"
                           },
                           "parameters": [
-                            "خط_أحمر",
+                            "RedLine",
                             "\"120;120;120\""
                           ]
                         }
@@ -1892,7 +1479,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "name": "حذف الأعلام",
+      "name": "Delete Flags",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
@@ -1915,7 +1502,7 @@
               },
               "parameters": [
                 "علم",
-                "خط_أحمر",
+                "RedLine",
                 "",
                 "",
                 ""
@@ -1955,7 +1542,7 @@
               },
               "parameters": [
                 "علم",
-                "خط_أحمر",
+                "RedLine",
                 "",
                 "",
                 ""
@@ -2000,65 +1587,11 @@
       "parameters": []
     },
     {
-      "colorB": 228,
-      "colorG": 176,
-      "colorR": 74,
-      "creationTime": 0,
-      "folded": true,
-      "name": "نهاية اللعبة",
-      "source": "",
-      "type": "BuiltinCommonInstructions::Group",
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "LayerVisible"
-              },
-              "parameters": [
-                "",
-                "\"Gameover\""
-              ]
-            },
-            {
-              "type": {
-                "value": "KeyReleased"
-              },
-              "parameters": [
-                "",
-                "Return"
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Scene"
-              },
-              "parameters": [
-                "",
-                "CurrentSceneName()",
-                "yes"
-              ]
-            }
-          ]
-        }
-      ],
-      "parameters": []
-    },
-    {
       "colorB": 35,
       "colorG": 166,
       "colorR": 245,
       "creationTime": 0,
-      "name": "الإنتهاء في أي وقت - فقط للتحقيق",
+      "name": "Reload Scene - for debugging",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
