@@ -98,10 +98,10 @@
   "resources": {
     "resources": [
       {
-        "file": "assets/بداية.wav",
+        "file": "assets/start.wav",
         "kind": "audio",
         "metadata": "",
-        "name": "assets\\بداية.wav",
+        "name": "Start",
         "preloadAsMusic": false,
         "preloadAsSound": false,
         "preloadInCache": false,
@@ -109,38 +109,38 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/أحمر.png",
+        "file": "assets/white_square.png",
         "kind": "image",
-        "metadata": "",
-        "name": "assets\\أحمر.png",
+        "metadata": "{\"localFilePath\":\"assets/أحمر.png\",\"extension\":\".png\",\"pskl\":{}}",
+        "name": "WhiteSquare",
         "smoothed": true,
         "userAdded": true
       },
       {
-        "file": "assets/صحيح.wav",
+        "file": "assets/correct.wav",
         "kind": "audio",
         "metadata": "",
-        "name": "assets\\صحيح.wav",
+        "name": "Correct",
         "preloadAsMusic": false,
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": false
       },
       {
-        "file": "assets/خطأ.mp3",
+        "file": "assets/wrong.mp3",
         "kind": "audio",
         "metadata": "",
-        "name": "assets\\خطأ.mp3",
+        "name": "Wrong",
         "preloadAsMusic": false,
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": true
       },
       {
-        "file": "assets/فات.mp3",
+        "file": "assets/miss.mp3",
         "kind": "audio",
         "metadata": "",
-        "name": "assets\\فات.mp3",
+        "name": "Miss",
         "preloadAsMusic": false,
         "preloadAsSound": false,
         "preloadInCache": false,
@@ -160,7 +160,7 @@
         "file": "assets/bg.jpg",
         "kind": "image",
         "metadata": "",
-        "name": "openart-image_HuuV6Ee2_1718727892119_raw.jpg",
+        "name": "Bg",
         "smoothed": true,
         "userAdded": true
       },
@@ -169,7 +169,7 @@
         "file": "assets/Phoenix-normal29.webp",
         "kind": "image",
         "metadata": "",
-        "name": "Phoenix-normal29.webp",
+        "name": "Phoenix",
         "smoothed": true,
         "userAdded": true
       },
@@ -178,7 +178,7 @@
         "file": "assets/Apollo_and_Document_2.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
-        "name": "Apollo_and_Document_2",
+        "name": "Apollo",
         "smoothed": true,
         "userAdded": true
       },
@@ -187,16 +187,16 @@
         "file": "assets/arrow_s.png",
         "kind": "image",
         "metadata": "",
-        "name": "arrow_s.png",
+        "name": "Arrow",
         "smoothed": true,
         "userAdded": true
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Flat Bar White Border.png",
+        "file": "assets/white_bar_border.png",
         "kind": "image",
         "metadata": "",
-        "name": "Flat Bar White Border.png",
+        "name": "WhiteBarBorder",
         "smoothed": false,
         "userAdded": false,
         "origin": {
@@ -206,28 +206,28 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Flat Bar Blue Fill Bar.png",
+        "file": "assets/blue_bar_border.png",
         "kind": "image",
         "metadata": "{\"localFilePath\":\"assets/Flat Bar Blue Fill Bar.png\",\"extension\":\".png\",\"pskl\":{}}",
-        "name": "assets\\Flat Bar Blue Fill Bar.png",
+        "name": "BlueFillBar",
         "smoothed": true,
         "userAdded": true
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/وجه.png",
+        "file": "assets/note.png",
         "kind": "image",
         "metadata": "",
-        "name": "assets\\وجه.png",
+        "name": "Note",
         "smoothed": true,
         "userAdded": true
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Flat Bar Red Fill Bar.png",
+        "file": "assets/red_bar_border.png",
         "kind": "image",
         "metadata": "",
-        "name": "assets\\Flat Bar Red Fill Bar.png",
+        "name": "RedFillBar",
         "smoothed": true,
         "userAdded": true
       }
@@ -272,7 +272,7 @@
           "height": 34,
           "leftMargin": 4,
           "rightMargin": 4,
-          "texture": "Flat Bar White Border.png",
+          "texture": "WhiteBarBorder",
           "tiled": true,
           "topMargin": 6,
           "width": 224
@@ -282,7 +282,7 @@
           "height": 24,
           "leftMargin": 0,
           "rightMargin": 0,
-          "texture": "assets\\Flat Bar Blue Fill Bar.png",
+          "texture": "BlueFillBar",
           "tiled": true,
           "topMargin": 0,
           "width": 24
@@ -292,7 +292,7 @@
           "height": 24,
           "leftMargin": 0,
           "rightMargin": 0,
-          "texture": "assets\\Flat Bar Blue Fill Bar.png",
+          "texture": "BlueFillBar",
           "tiled": true,
           "topMargin": 0,
           "width": 24
@@ -367,7 +367,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "arrow_s.png",
+                  "image": "Arrow",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -500,7 +500,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\وجه.png",
+                  "image": "Note",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -560,7 +560,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\Flat Bar Red Fill Bar.png",
+                  "image": "RedFillBar",
                   "points": [],
                   "originPoint": {
                     "name": "origine",

@@ -180,8 +180,8 @@
     {
       "assetStoreId": "",
       "height": 8,
-      "name": "RedLine",
-      "texture": "assets\\أحمر.png",
+      "name": "JudjmentLine",
+      "texture": "WhiteSquare",
       "type": "TiledSpriteObject::TiledSprite",
       "width": 8,
       "variables": [],
@@ -208,7 +208,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "openart-image_HuuV6Ee2_1718727892119_raw.jpg",
+                  "image": "Bg",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -268,7 +268,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "Phoenix-normal29.webp",
+                  "image": "Phoenix",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -329,7 +329,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "Apollo_and_Document_2",
+                  "image": "Apollo",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -377,7 +377,7 @@
         "objectName": "Background"
       },
       {
-        "objectName": "RedLine"
+        "objectName": "JudjmentLine"
       },
       {
         "objectName": "Player"
@@ -455,7 +455,7 @@
                   },
                   "parameters": [
                     "",
-                    "assets\\بداية.wav",
+                    "Start",
                     "2",
                     "60",
                     "0.5"
@@ -502,7 +502,7 @@
                   },
                   "parameters": [
                     "",
-                    "assets\\بداية.wav",
+                    "Start",
                     "2",
                     "90",
                     "1"
@@ -549,7 +549,7 @@
                   },
                   "parameters": [
                     "",
-                    "assets\\بداية.wav",
+                    "Start",
                     "2",
                     "120",
                     "1.5"
@@ -705,7 +705,7 @@
                         "value": "TiledSpriteObject::SetColor"
                       },
                       "parameters": [
-                        "RedLine",
+                        "JudjmentLine",
                         "\"255;255;255\""
                       ]
                     }
@@ -1145,7 +1145,7 @@
                             "value": "TiledSpriteObject::SetColor"
                           },
                           "parameters": [
-                            "RedLine",
+                            "JudjmentLine",
                             "\"120;120;120\""
                           ]
                         }
@@ -1198,7 +1198,7 @@
                                   },
                                   "parameters": [
                                     "",
-                                    "assets\\صحيح.wav",
+                                    "Correct",
                                     "2",
                                     "100",
                                     "RandomFloatInRange(0.9, 1.1)"
@@ -1237,7 +1237,7 @@
                                   },
                                   "parameters": [
                                     "",
-                                    "assets\\خطأ.mp3",
+                                    "Wrong",
                                     "2",
                                     "100",
                                     "RandomFloatInRange(0.9, 1.1)"
@@ -1350,7 +1350,7 @@
                             "value": "TiledSpriteObject::SetColor"
                           },
                           "parameters": [
-                            "RedLine",
+                            "JudjmentLine",
                             "\"120;120;120\""
                           ]
                         }
@@ -1403,7 +1403,7 @@
                                   },
                                   "parameters": [
                                     "",
-                                    "assets\\صحيح.wav",
+                                    "Correct",
                                     "2",
                                     "100",
                                     "RandomFloatInRange(0.9, 1.1)"
@@ -1442,7 +1442,7 @@
                                   },
                                   "parameters": [
                                     "",
-                                    "assets\\خطأ.mp3",
+                                    "Wrong",
                                     "2",
                                     "100",
                                     "RandomFloatInRange(0.9, 1.1)"
@@ -1502,7 +1502,7 @@
               },
               "parameters": [
                 "علم",
-                "RedLine",
+                "JudjmentLine",
                 "",
                 "",
                 ""
@@ -1542,7 +1542,7 @@
               },
               "parameters": [
                 "علم",
-                "RedLine",
+                "JudjmentLine",
                 "",
                 "",
                 ""
@@ -1565,7 +1565,7 @@
               },
               "parameters": [
                 "",
-                "assets\\فات.mp3",
+                "Miss",
                 "2",
                 "100",
                 "RandomFloatInRange(0.9, 1.1)"
