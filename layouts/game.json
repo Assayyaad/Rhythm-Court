@@ -6,7 +6,7 @@
   "r": 165,
   "standardSortMethod": true,
   "stopSoundsOnStartup": true,
-  "title": "مطبّع",
+  "title": "Rhythm Court",
   "v": 206,
   "uiSettings": {
     "grid": false,
@@ -18,31 +18,84 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.4753944171546968,
+    "zoomFactor": 0.41633396914344445,
     "windowMask": true
   },
-  "objectsGroups": [],
+  "objectsGroups": [
+    {
+      "name": "DialogueGroup",
+      "objects": []
+    },
+    {
+      "name": "BeatGroup",
+      "objects": []
+    }
+  ],
   "variables": [
     {
-      "name": "بدأ_اللعب",
+      "folded": true,
+      "name": "Spawn",
       "type": "boolean",
       "value": false
     },
     {
-      "name": "عدد_الأعلام",
-      "type": "number",
-      "value": 30
-    },
-    {
-      "name": "الرصيد",
-      "type": "number",
-      "value": 0
-    },
-    {
-      "folded": true,
-      "name": "مؤقت",
-      "type": "number",
-      "value": 0
+      "name": "Beat",
+      "type": "structure",
+      "children": [
+        {
+          "folded": true,
+          "name": "Index",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "folded": true,
+          "name": "Length",
+          "type": "number",
+          "value": 7
+        },
+        {
+          "name": "Notes",
+          "type": "array",
+          "children": [
+            {
+              "folded": true,
+              "type": "number",
+              "value": 1
+            },
+            {
+              "folded": true,
+              "type": "number",
+              "value": 0.4
+            },
+            {
+              "folded": true,
+              "type": "number",
+              "value": 0.4
+            },
+            {
+              "folded": true,
+              "type": "number",
+              "value": 0.8
+            },
+            {
+              "folded": true,
+              "type": "number",
+              "value": 1
+            },
+            {
+              "folded": true,
+              "type": "number",
+              "value": 0.6
+            },
+            {
+              "folded": true,
+              "type": "number",
+              "value": 0.4
+            }
+          ]
+        }
+      ]
     }
   ],
   "instances": [
@@ -50,13 +103,13 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 92,
+      "height": 239,
       "layer": "الأعلام",
-      "name": "RedLine",
+      "name": "JudjmentLine",
       "persistentUuid": "4f74333e-b081-4290-b237-c960abb43372",
       "width": 24,
-      "x": 511,
-      "y": 412,
+      "x": 430,
+      "y": 800,
       "zOrder": 15,
       "numberProperties": [],
       "stringProperties": [],
@@ -120,8 +173,8 @@
       "name": "Counter",
       "persistentUuid": "670600b7-1575-47f3-9fe2-6f97bc00804d",
       "width": 0,
-      "x": 1026,
-      "y": 455,
+      "x": 951,
+      "y": 465,
       "zOrder": 31,
       "numberProperties": [],
       "stringProperties": [],
@@ -177,17 +230,6 @@
     }
   ],
   "objects": [
-    {
-      "assetStoreId": "",
-      "height": 8,
-      "name": "JudjmentLine",
-      "texture": "WhiteSquare",
-      "type": "TiledSpriteObject::TiledSprite",
-      "width": 8,
-      "variables": [],
-      "effects": [],
-      "behaviors": []
-    },
     {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
@@ -377,9 +419,6 @@
         "objectName": "Background"
       },
       {
-        "objectName": "JudjmentLine"
-      },
-      {
         "objectName": "Player"
       },
       {
@@ -389,231 +428,291 @@
   },
   "events": [
     {
-      "colorB": 228,
-      "colorG": 176,
-      "colorR": 74,
-      "creationTime": 0,
-      "name": "البداية",
-      "source": "",
-      "type": "BuiltinCommonInstructions::Group",
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "DepartScene"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetFullScreen"
+          },
+          "parameters": [
+            "",
+            "yes",
+            ""
+          ]
+        }
+      ],
       "events": [
         {
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "DepartScene"
-              },
-              "parameters": [
-                ""
-              ]
-            }
-          ],
+          "conditions": [],
           "actions": [
             {
               "type": {
-                "value": "SetFullScreen"
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "LevelState",
+                "=",
+                "\"Wait\""
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "Counter",
+                "=",
+                "(SceneWindowWidth() * 0.5) - (Counter.Width() * 0.5)",
+                "=",
+                "(SceneWindowHeight() * 0.5) - (Counter.Height() * 0.5)"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "Counter",
+                "Text",
+                "=",
+                "\"3\""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
               },
               "parameters": [
                 "",
+                "Start",
+                "2",
+                "60",
+                "0.5"
+              ]
+            },
+            {
+              "type": {
+                "value": "ShakeObject::ShakeObject_PositionAngle::ShakeObject_PositionAngle"
+              },
+              "parameters": [
+                "Counter",
+                "ShakeObject_PositionAngle",
+                "0.2",
+                "2",
+                "2",
+                "2",
+                "0.08",
                 "yes",
                 ""
               ]
-            }
-          ],
-          "events": [
+            },
             {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": [
-                {
-                  "type": {
-                    "value": "MettreXY"
-                  },
-                  "parameters": [
-                    "Counter",
-                    "=",
-                    "(SceneWindowWidth() * 0.5) - (Counter.Width() * 0.5)",
-                    "=",
-                    "(SceneWindowHeight() * 0.5) - (Counter.Height() * 0.5)"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-                  },
-                  "parameters": [
-                    "Counter",
-                    "Text",
-                    "=",
-                    "\"3\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "PlaySound"
-                  },
-                  "parameters": [
-                    "",
-                    "Start",
-                    "2",
-                    "60",
-                    "0.5"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ShakeObject::ShakeObject_PositionAngle::ShakeObject_PositionAngle"
-                  },
-                  "parameters": [
-                    "Counter",
-                    "ShakeObject_PositionAngle",
-                    "0.2",
-                    "2",
-                    "2",
-                    "2",
-                    "0.08",
-                    "yes",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Wait"
-                  },
-                  "parameters": [
-                    "1"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-                  },
-                  "parameters": [
-                    "Counter",
-                    "Text",
-                    "=",
-                    "\"2\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "PlaySound"
-                  },
-                  "parameters": [
-                    "",
-                    "Start",
-                    "2",
-                    "90",
-                    "1"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ShakeObject::ShakeObject_PositionAngle::ShakeObject_PositionAngle"
-                  },
-                  "parameters": [
-                    "Counter",
-                    "ShakeObject_PositionAngle",
-                    "0.2",
-                    "4",
-                    "4",
-                    "4",
-                    "0.08",
-                    "yes",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Wait"
-                  },
-                  "parameters": [
-                    "1"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-                  },
-                  "parameters": [
-                    "Counter",
-                    "Text",
-                    "=",
-                    "\"1\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "PlaySound"
-                  },
-                  "parameters": [
-                    "",
-                    "Start",
-                    "2",
-                    "120",
-                    "1.5"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ShakeObject::ShakeObject_PositionAngle::ShakeObject_PositionAngle"
-                  },
-                  "parameters": [
-                    "Counter",
-                    "ShakeObject_PositionAngle",
-                    "0.2",
-                    "7",
-                    "7",
-                    "7",
-                    "0.08",
-                    "yes",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Wait"
-                  },
-                  "parameters": [
-                    "1"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Delete"
-                  },
-                  "parameters": [
-                    "Counter",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetSceneVariableAsBoolean"
-                  },
-                  "parameters": [
-                    "بدأ_اللعب",
-                    "True"
-                  ]
-                }
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "Counter",
+                "Text",
+                "=",
+                "\"2\""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "Start",
+                "2",
+                "90",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "ShakeObject::ShakeObject_PositionAngle::ShakeObject_PositionAngle"
+              },
+              "parameters": [
+                "Counter",
+                "ShakeObject_PositionAngle",
+                "0.2",
+                "4",
+                "4",
+                "4",
+                "0.08",
+                "yes",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "Counter",
+                "Text",
+                "=",
+                "\"1\""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "Start",
+                "2",
+                "120",
+                "1.5"
+              ]
+            },
+            {
+              "type": {
+                "value": "ShakeObject::ShakeObject_PositionAngle::ShakeObject_PositionAngle"
+              },
+              "parameters": [
+                "Counter",
+                "ShakeObject_PositionAngle",
+                "0.2",
+                "7",
+                "7",
+                "7",
+                "0.08",
+                "yes",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Counter",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "LevelState",
+                "=",
+                "\"Beat\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "FlippableCapability::FlippableBehavior::FlipY"
+              },
+              "parameters": [
+                "BarArrow",
+                "Flippable",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberObjectVariable"
+              },
+              "parameters": [
+                "BlueBar",
+                "Cache.SegmentWidth",
+                "=",
+                "BlueBar.Width() / BlueBar.MaxValue()"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberObjectVariable"
+              },
+              "parameters": [
+                "BarArrow",
+                "Cache.StartX",
+                "=",
+                "BlueBar.X() - (BarArrow.Width() * 0.5)"
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreY"
+              },
+              "parameters": [
+                "BarArrow",
+                "=",
+                "BlueBar.Y() + BarArrow.Height()"
               ]
             }
           ]
         }
-      ],
-      "parameters": []
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Game Loop"
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
           "type": {
-            "value": "SceneVariableAsBoolean"
+            "value": "BooleanVariable"
           },
           "parameters": [
-            "بدأ_اللعب",
-            "True"
+            "Pause",
+            "=",
+            ""
           ]
         }
       ],
@@ -624,41 +723,208 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "name": "Player",
+          "folded": true,
+          "name": "Update",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
             {
-              "colorB": 228,
-              "colorG": 176,
-              "colorR": 74,
-              "creationTime": 0,
-              "name": "Re-set",
-              "source": "",
-              "type": "BuiltinCommonInstructions::Group",
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "MettreX"
+                  },
+                  "parameters": [
+                    "BarArrow",
+                    "=",
+                    "BarArrow.Cache.StartX + (BlueBar.Cache.SegmentWidth * BlueBar.Value())"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Controls",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "Space"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [],
               "events": [
                 {
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
                       "type": {
-                        "inverted": true,
-                        "value": "AnimationName"
+                        "value": "ObjectVariableAsBoolean"
                       },
                       "parameters": [
-                        "وجه",
-                        "\"عادي\""
+                        "Note",
+                        "touched",
+                        "True"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "Note",
+                        ""
                       ]
                     },
                     {
                       "type": {
-                        "value": "CompareObjectTimer"
+                        "value": "PlaySound"
                       },
                       "parameters": [
-                        "وجه",
-                        "\"إعادة ضبط\"",
+                        "",
+                        "Correct",
+                        "2",
+                        "100",
+                        "RandomFloatInRange(0.9, 1.1)"
+                      ]
+                    }
+                  ],
+                  "events": [
+                    {
+                      "disabled": true,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
+                          },
+                          "parameters": [
+                            "BlueBar",
+                            "+",
+                            "1",
+                            ""
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "StringVariable"
+                      },
+                      "parameters": [
+                        "LevelState",
+                        "=",
+                        "\"Story\""
+                      ]
+                    }
+                  ],
+                  "actions": []
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Beat Loop",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "LevelState",
+                    "=",
+                    "\"Beat\""
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Beat.Index",
+                        "=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ResetTimer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Beat\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CompareTimer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Beat\"",
                         ">=",
-                        "0.75"
+                        "Beat.Notes[Beat.Index]"
                       ]
                     },
                     {
@@ -671,352 +937,75 @@
                   "actions": [
                     {
                       "type": {
-                        "value": "SetAnimationName"
+                        "value": "SetBooleanVariable"
                       },
                       "parameters": [
-                        "وجه",
-                        "\"عادي\""
+                        "Spawn",
+                        "True",
+                        "0"
                       ]
                     },
                     {
                       "type": {
-                        "value": "ResizableCapability::ResizableBehavior::SetHeight"
+                        "value": "SetNumberVariable"
                       },
                       "parameters": [
-                        "وجه",
-                        "Resizable",
-                        "=",
-                        "150"
+                        "Beat.Index",
+                        "+",
+                        "1"
                       ]
                     },
                     {
                       "type": {
-                        "value": "ResizableCapability::ResizableBehavior::SetWidth"
-                      },
-                      "parameters": [
-                        "وجه",
-                        "Resizable",
-                        "=",
-                        "150"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "TiledSpriteObject::SetColor"
-                      },
-                      "parameters": [
-                        "JudjmentLine",
-                        "\"255;255;255\""
-                      ]
-                    }
-                  ]
-                }
-              ],
-              "parameters": []
-            },
-            {
-              "colorB": 228,
-              "colorG": 176,
-              "colorR": 74,
-              "creationTime": 0,
-              "name": "Flags",
-              "source": "",
-              "type": "BuiltinCommonInstructions::Group",
-              "events": [
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "RepeatEveryXSeconds::Repeat"
+                        "value": "ResetTimer"
                       },
                       "parameters": [
                         "",
-                        "\"تفريخ\"",
-                        "1.6",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "VarScene"
-                      },
-                      "parameters": [
-                        "عدد_الأعلام",
-                        ">",
-                        "0"
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "ModVarScene"
-                      },
-                      "parameters": [
-                        "مؤقت",
-                        "=",
-                        "RandomInRange(0, 3)"
+                        "\"Beat\""
                       ]
                     }
                   ],
                   "events": [
                     {
                       "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [],
-                      "actions": [
+                      "conditions": [
                         {
                           "type": {
-                            "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+                            "value": "NumberVariable"
                           },
                           "parameters": [
-                            "التلفاز",
-                            "Animation",
-                            "=",
-                            "Variable(مؤقت) + 1"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "ResizableCapability::ResizableBehavior::SetWidth"
-                          },
-                          "parameters": [
-                            "التلفاز",
-                            "Resizable",
-                            "=",
-                            "555"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "ResizableCapability::ResizableBehavior::SetHeight"
-                          },
-                          "parameters": [
-                            "التلفاز",
-                            "Resizable",
-                            "=",
-                            "322"
+                            "Beat.Index",
+                            ">=",
+                            "Beat.Length"
                           ]
                         }
-                      ]
-                    },
-                    {
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [],
+                      ],
                       "actions": [
                         {
                           "type": {
-                            "value": "Create"
+                            "value": "SetNumberVariable"
                           },
                           "parameters": [
-                            "",
-                            "علم",
-                            "276",
-                            "340",
-                            "\"\""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
-                          },
-                          "parameters": [
-                            "علم",
-                            "Animation",
+                            "Beat.Index",
                             "=",
-                            "Variable(مؤقت)"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "ChangeLayer"
-                          },
-                          "parameters": [
-                            "علم",
-                            "\"الأعلام\""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "ModVarScene"
-                          },
-                          "parameters": [
-                            "عدد_الأعلام",
-                            "-",
-                            "1"
+                            "0"
                           ]
                         }
                       ],
                       "events": [
                         {
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "value": "AnimatableCapability::AnimatableBehavior::Name"
-                              },
-                              "parameters": [
-                                "علم",
-                                "Animation",
-                                "=",
-                                "\"فلسطين\""
-                              ]
-                            }
-                          ],
-                          "actions": [
-                            {
-                              "type": {
-                                "value": "SetObjectVariableAsBoolean"
-                              },
-                              "parameters": [
-                                "علم",
-                                "تطبيع",
-                                ""
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "ModVarObjet"
-                              },
-                              "parameters": [
-                                "علم",
-                                "مضاعفة",
-                                "=",
-                                "5"
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "value": "AnimatableCapability::AnimatableBehavior::Name"
-                              },
-                              "parameters": [
-                                "علم",
-                                "Animation",
-                                "=",
-                                "\"السودان\""
-                              ]
-                            }
-                          ],
-                          "actions": [
-                            {
-                              "type": {
-                                "value": "ModVarObjet"
-                              },
-                              "parameters": [
-                                "علم",
-                                "مضاعفة",
-                                "=",
-                                "1"
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "SetObjectVariableAsBoolean"
-                              },
-                              "parameters": [
-                                "علم",
-                                "تطبيع",
-                                ""
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "value": "AnimatableCapability::AnimatableBehavior::Name"
-                              },
-                              "parameters": [
-                                "علم",
-                                "Animation",
-                                "=",
-                                "\"إسرائيل\""
-                              ]
-                            }
-                          ],
-                          "actions": [
-                            {
-                              "type": {
-                                "value": "ModVarObjet"
-                              },
-                              "parameters": [
-                                "علم",
-                                "مضاعفة",
-                                "=",
-                                "5"
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "SetObjectVariableAsBoolean"
-                              },
-                              "parameters": [
-                                "علم",
-                                "تطبيع",
-                                "True"
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "value": "AnimatableCapability::AnimatableBehavior::Name"
-                              },
-                              "parameters": [
-                                "علم",
-                                "Animation",
-                                "=",
-                                "\"أوكرانيا\""
-                              ]
-                            }
-                          ],
-                          "actions": [
-                            {
-                              "type": {
-                                "value": "ModVarObjet"
-                              },
-                              "parameters": [
-                                "علم",
-                                "مضاعفة",
-                                "=",
-                                "1"
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "SetObjectVariableAsBoolean"
-                              },
-                              "parameters": [
-                                "علم",
-                                "تطبيع",
-                                "True"
-                              ]
-                            }
-                          ]
-                        },
-                        {
+                          "disabled": true,
                           "type": "BuiltinCommonInstructions::Standard",
                           "conditions": [],
                           "actions": [
                             {
                               "type": {
-                                "value": "AddForceXY"
+                                "value": "SetStringVariable"
                               },
                               "parameters": [
-                                "علم",
-                                "240",
-                                "0",
-                                "1"
+                                "LevelState",
+                                "=",
+                                "\"Story\""
                               ]
                             }
                           ]
@@ -1025,449 +1014,222 @@
                     }
                   ]
                 }
-              ],
-              "parameters": []
-            },
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Spawning",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
             {
-              "colorB": 228,
-              "colorG": 176,
-              "colorR": 74,
-              "creationTime": 0,
-              "name": "Controls",
-              "source": "",
-              "type": "BuiltinCommonInstructions::Group",
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "LevelState",
+                    "=",
+                    "\"Beat\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "Spawn",
+                    "True",
+                    "Beat.length"
+                  ]
+                }
+              ],
+              "actions": [],
               "events": [
                 {
                   "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
+                  "conditions": [],
+                  "actions": [
                     {
                       "type": {
-                        "value": "CompareObjectTimer"
+                        "value": "Create"
                       },
                       "parameters": [
-                        "وجه",
-                        "\"إعادة ضبط\"",
-                        ">=",
-                        "0.75"
-                      ]
-                    }
-                  ],
-                  "actions": [],
-                  "events": [
-                    {
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "value": "BuiltinCommonInstructions::Or"
-                          },
-                          "parameters": [],
-                          "subInstructions": [
-                            {
-                              "type": {
-                                "value": "KeyPressed"
-                              },
-                              "parameters": [
-                                "",
-                                "d"
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "KeyPressed"
-                              },
-                              "parameters": [
-                                "",
-                                "Right"
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "KeyPressed"
-                              },
-                              "parameters": [
-                                "",
-                                "NumpadRight"
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "BuiltinCommonInstructions::Once"
-                          },
-                          "parameters": []
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "ResetObjectTimer"
-                          },
-                          "parameters": [
-                            "وجه",
-                            "\"إعادة ضبط\""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "SetAnimationName"
-                          },
-                          "parameters": [
-                            "وجه",
-                            "\"يبكي\""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "ResizableCapability::ResizableBehavior::SetHeight"
-                          },
-                          "parameters": [
-                            "وجه",
-                            "Resizable",
-                            "=",
-                            "150"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "ResizableCapability::ResizableBehavior::SetWidth"
-                          },
-                          "parameters": [
-                            "وجه",
-                            "Resizable",
-                            "=",
-                            "150"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "TiledSpriteObject::SetColor"
-                          },
-                          "parameters": [
-                            "JudjmentLine",
-                            "\"120;120;120\""
-                          ]
-                        }
-                      ],
-                      "events": [
-                        {
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "value": "ObjectVariableAsBoolean"
-                              },
-                              "parameters": [
-                                "علم",
-                                "وصل",
-                                "True"
-                              ]
-                            }
-                          ],
-                          "actions": [
-                            {
-                              "type": {
-                                "value": "Delete"
-                              },
-                              "parameters": [
-                                "علم",
-                                ""
-                              ]
-                            }
-                          ],
-                          "events": [
-                            {
-                              "type": "BuiltinCommonInstructions::Standard",
-                              "conditions": [
-                                {
-                                  "type": {
-                                    "value": "ObjectVariableAsBoolean"
-                                  },
-                                  "parameters": [
-                                    "علم",
-                                    "تطبيع",
-                                    "True"
-                                  ]
-                                }
-                              ],
-                              "actions": [
-                                {
-                                  "type": {
-                                    "value": "PlaySound"
-                                  },
-                                  "parameters": [
-                                    "",
-                                    "Correct",
-                                    "2",
-                                    "100",
-                                    "RandomFloatInRange(0.9, 1.1)"
-                                  ]
-                                },
-                                {
-                                  "type": {
-                                    "value": "ModVarScene"
-                                  },
-                                  "parameters": [
-                                    "الرصيد",
-                                    "+",
-                                    "علم.مضاعفة * 10"
-                                  ]
-                                }
-                              ]
-                            },
-                            {
-                              "type": "BuiltinCommonInstructions::Standard",
-                              "conditions": [
-                                {
-                                  "type": {
-                                    "value": "ObjectVariableAsBoolean"
-                                  },
-                                  "parameters": [
-                                    "علم",
-                                    "تطبيع",
-                                    "False"
-                                  ]
-                                }
-                              ],
-                              "actions": [
-                                {
-                                  "type": {
-                                    "value": "PlaySound"
-                                  },
-                                  "parameters": [
-                                    "",
-                                    "Wrong",
-                                    "2",
-                                    "100",
-                                    "RandomFloatInRange(0.9, 1.1)"
-                                  ]
-                                },
-                                {
-                                  "type": {
-                                    "value": "ModVarScene"
-                                  },
-                                  "parameters": [
-                                    "الرصيد",
-                                    "-",
-                                    "علم.مضاعفة * 10"
-                                  ]
-                                }
-                              ]
-                            }
-                          ]
-                        }
+                        "",
+                        "Note",
+                        "0",
+                        "0",
+                        ""
                       ]
                     },
                     {
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "value": "BuiltinCommonInstructions::Or"
-                          },
-                          "parameters": [],
-                          "subInstructions": [
-                            {
-                              "type": {
-                                "value": "KeyPressed"
-                              },
-                              "parameters": [
-                                "",
-                                "a"
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "KeyPressed"
-                              },
-                              "parameters": [
-                                "",
-                                "Left"
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "KeyPressed"
-                              },
-                              "parameters": [
-                                "",
-                                "NumpadLeft"
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "BuiltinCommonInstructions::Once"
-                          },
-                          "parameters": []
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "ResetObjectTimer"
-                          },
-                          "parameters": [
-                            "وجه",
-                            "\"إعادة ضبط\""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "SetAnimationName"
-                          },
-                          "parameters": [
-                            "وجه",
-                            "\"ميت\""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "ResizableCapability::ResizableBehavior::SetHeight"
-                          },
-                          "parameters": [
-                            "وجه",
-                            "Resizable",
-                            "=",
-                            "150"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "ResizableCapability::ResizableBehavior::SetWidth"
-                          },
-                          "parameters": [
-                            "وجه",
-                            "Resizable",
-                            "=",
-                            "150"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "TiledSpriteObject::SetColor"
-                          },
-                          "parameters": [
-                            "JudjmentLine",
-                            "\"120;120;120\""
-                          ]
-                        }
-                      ],
-                      "events": [
-                        {
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "value": "ObjectVariableAsBoolean"
-                              },
-                              "parameters": [
-                                "علم",
-                                "وصل",
-                                "True"
-                              ]
-                            }
-                          ],
-                          "actions": [
-                            {
-                              "type": {
-                                "value": "Delete"
-                              },
-                              "parameters": [
-                                "علم",
-                                ""
-                              ]
-                            }
-                          ],
-                          "events": [
-                            {
-                              "type": "BuiltinCommonInstructions::Standard",
-                              "conditions": [
-                                {
-                                  "type": {
-                                    "value": "ObjectVariableAsBoolean"
-                                  },
-                                  "parameters": [
-                                    "علم",
-                                    "تطبيع",
-                                    "False"
-                                  ]
-                                }
-                              ],
-                              "actions": [
-                                {
-                                  "type": {
-                                    "value": "PlaySound"
-                                  },
-                                  "parameters": [
-                                    "",
-                                    "Correct",
-                                    "2",
-                                    "100",
-                                    "RandomFloatInRange(0.9, 1.1)"
-                                  ]
-                                },
-                                {
-                                  "type": {
-                                    "value": "ModVarScene"
-                                  },
-                                  "parameters": [
-                                    "الرصيد",
-                                    "+",
-                                    "علم.مضاعفة * 10"
-                                  ]
-                                }
-                              ]
-                            },
-                            {
-                              "type": "BuiltinCommonInstructions::Standard",
-                              "conditions": [
-                                {
-                                  "type": {
-                                    "value": "ObjectVariableAsBoolean"
-                                  },
-                                  "parameters": [
-                                    "علم",
-                                    "تطبيع",
-                                    "True"
-                                  ]
-                                }
-                              ],
-                              "actions": [
-                                {
-                                  "type": {
-                                    "value": "PlaySound"
-                                  },
-                                  "parameters": [
-                                    "",
-                                    "Wrong",
-                                    "2",
-                                    "100",
-                                    "RandomFloatInRange(0.9, 1.1)"
-                                  ]
-                                },
-                                {
-                                  "type": {
-                                    "value": "ModVarScene"
-                                  },
-                                  "parameters": [
-                                    "الرصيد",
-                                    "-",
-                                    "علم.مضاعفة * 10"
-                                  ]
-                                }
-                              ]
-                            }
-                          ]
-                        }
+                      "type": {
+                        "value": "MettreXY"
+                      },
+                      "parameters": [
+                        "Note",
+                        "=",
+                        "Note.startPos.x",
+                        "=",
+                        "Note.startPos.y"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AddForceXY"
+                      },
+                      "parameters": [
+                        "Note",
+                        "Note.speed",
+                        "0",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetBooleanVariable"
+                      },
+                      "parameters": [
+                        "Spawn",
+                        "False",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "DebuggerTools::ConsoleLog"
+                      },
+                      "parameters": [
+                        "\"NO\"",
+                        "\"info\"",
+                        ""
                       ]
                     }
                   ]
                 }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "folded": true,
+          "name": "Delete Notes",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Note",
+                    "touched",
+                    "False"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Note",
+                    "JudjmentLine",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
               ],
-              "parameters": []
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Note",
+                    "touched",
+                    "True"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Note",
+                    "touched",
+                    "True"
+                  ]
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Note",
+                    "JudjmentLine",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Note",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "Miss",
+                    "2",
+                    "100",
+                    "RandomFloatInRange(0.9, 1.1)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
+                  },
+                  "parameters": [
+                    "BlueBar",
+                    "-",
+                    "1",
+                    ""
+                  ]
+                }
+              ]
             }
           ],
           "parameters": []
@@ -1475,154 +1237,20 @@
       ]
     },
     {
-      "colorB": 228,
-      "colorG": 176,
-      "colorR": 74,
-      "creationTime": 0,
-      "name": "Delete Flags",
-      "source": "",
-      "type": "BuiltinCommonInstructions::Group",
-      "events": [
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
         {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "ObjectVariableAsBoolean"
-              },
-              "parameters": [
-                "علم",
-                "وصل",
-                "False"
-              ]
-            },
-            {
-              "type": {
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "علم",
-                "JudjmentLine",
-                "",
-                "",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetObjectVariableAsBoolean"
-              },
-              "parameters": [
-                "علم",
-                "وصل",
-                "True"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "ObjectVariableAsBoolean"
-              },
-              "parameters": [
-                "علم",
-                "وصل",
-                "True"
-              ]
-            },
-            {
-              "type": {
-                "inverted": true,
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "علم",
-                "JudjmentLine",
-                "",
-                "",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "علم",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "PlaySound"
-              },
-              "parameters": [
-                "",
-                "Miss",
-                "2",
-                "100",
-                "RandomFloatInRange(0.9, 1.1)"
-              ]
-            },
-            {
-              "type": {
-                "value": "ModVarScene"
-              },
-              "parameters": [
-                "الرصيد",
-                "-",
-                "علم.مضاعفة * 5"
-              ]
-            }
+          "type": {
+            "value": "BooleanVariable"
+          },
+          "parameters": [
+            "Pause",
+            "True",
+            ""
           ]
         }
       ],
-      "parameters": []
-    },
-    {
-      "colorB": 35,
-      "colorG": 166,
-      "colorR": 245,
-      "creationTime": 0,
-      "name": "Reload Scene - for debugging",
-      "source": "",
-      "type": "BuiltinCommonInstructions::Group",
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "KeyReleased"
-              },
-              "parameters": [
-                "",
-                "r"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Scene"
-              },
-              "parameters": [
-                "",
-                "CurrentSceneName()",
-                "yes"
-              ]
-            }
-          ]
-        }
-      ],
-      "parameters": []
+      "actions": []
     }
   ],
   "layers": [

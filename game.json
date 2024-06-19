@@ -230,6 +230,24 @@
         "name": "RedFillBar",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/kenney_fantasy-ui-borders/PNG/Double/Transparent center/panel-transparent-center-010.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\kenney_fantasy-ui-borders\\PNG\\Double\\Transparent center\\panel-transparent-center-010.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/kenney_board-game-icons/PNG/Default (64px)/dice_empty.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\kenney_board-game-icons\\PNG\\Default (64px)\\dice_empty.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -465,9 +483,15 @@
       "updateIfNotVisible": false,
       "variables": [
         {
+          "folded": true,
+          "name": "touched",
+          "type": "boolean",
+          "value": false
+        },
+        {
           "name": "speed",
           "type": "number",
-          "value": 300
+          "value": -300
         },
         {
           "name": "startPos",
@@ -477,12 +501,12 @@
               "folded": true,
               "name": "x",
               "type": "number",
-              "value": 0
+              "value": 1480
             },
             {
               "name": "y",
               "type": "number",
-              "value": 540
+              "value": 900
             }
           ]
         }
@@ -500,7 +524,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "Note",
+                  "image": "assets\\kenney_board-game-icons\\PNG\\Default (64px)\\dice_empty.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -520,16 +544,16 @@
                         "y": 0
                       },
                       {
-                        "x": 4000,
+                        "x": 64,
                         "y": 0
                       },
                       {
-                        "x": 4000,
-                        "y": 4170
+                        "x": 64,
+                        "y": 64
                       },
                       {
                         "x": 0,
-                        "y": 4170
+                        "y": 64
                       }
                     ]
                   ]
@@ -599,6 +623,17 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "",
+      "height": 8,
+      "name": "JudjmentLine",
+      "texture": "WhiteSquare",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 8,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
     }
   ],
   "objectsFolderStructure": {
@@ -617,6 +652,9 @@
         "objectName": "Note"
       },
       {
+        "objectName": "JudjmentLine"
+      },
+      {
         "objectName": "Counter"
       }
     ]
@@ -633,21 +671,21 @@
       "folded": true,
       "name": "LevelState",
       "type": "string",
-      "value": "Story"
+      "value": "Wait"
     }
   ],
   "layouts": [
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/game"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/test"
     }
   ],
   "externalEvents": [],
   "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/autotyping"
+    },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/panelspritecontinuousbar"
