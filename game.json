@@ -248,6 +248,24 @@
         "name": "assets\\kenney_board-game-icons\\PNG\\Default (64px)\\dice_empty.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Screenshot-court.webp",
+        "kind": "image",
+        "metadata": "",
+        "name": "Screenshot-court.webp",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Edgeworth-normal29.webp",
+        "kind": "image",
+        "metadata": "",
+        "name": "Edgeworth-normal29.webp",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -678,6 +696,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/game"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/game2"
     }
   ],
   "externalEvents": [],

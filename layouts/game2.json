@@ -1,0 +1,1407 @@
+{
+  "b": 252,
+  "disableInputWhenNotFocused": true,
+  "mangledName": "Game2",
+  "name": "Game2",
+  "r": 165,
+  "standardSortMethod": true,
+  "stopSoundsOnStartup": true,
+  "title": "Rhythm Court",
+  "v": 206,
+  "uiSettings": {
+    "grid": false,
+    "gridType": "rectangular",
+    "gridWidth": 4,
+    "gridHeight": 4,
+    "gridOffsetX": 0,
+    "gridOffsetY": 0,
+    "gridColor": 10401023,
+    "gridAlpha": 0.8,
+    "snap": false,
+    "zoomFactor": 0.41633396914344445,
+    "windowMask": true
+  },
+  "objectsGroups": [
+    {
+      "name": "DialogueGroup",
+      "objects": []
+    },
+    {
+      "name": "BeatGroup",
+      "objects": []
+    }
+  ],
+  "variables": [
+    {
+      "folded": true,
+      "name": "Spawn",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "Beat",
+      "type": "structure",
+      "children": [
+        {
+          "folded": true,
+          "name": "Index",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "folded": true,
+          "name": "Length",
+          "type": "number",
+          "value": 7
+        },
+        {
+          "name": "Notes",
+          "type": "array",
+          "children": [
+            {
+              "folded": true,
+              "type": "number",
+              "value": 1
+            },
+            {
+              "folded": true,
+              "type": "number",
+              "value": 0.4
+            },
+            {
+              "folded": true,
+              "type": "number",
+              "value": 0.4
+            },
+            {
+              "folded": true,
+              "type": "number",
+              "value": 0.8
+            },
+            {
+              "folded": true,
+              "type": "number",
+              "value": 1
+            },
+            {
+              "folded": true,
+              "type": "number",
+              "value": 0.6
+            },
+            {
+              "folded": true,
+              "type": "number",
+              "value": 0.4
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "instances": [
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 239,
+      "layer": "الأعلام",
+      "name": "JudjmentLine",
+      "persistentUuid": "4f74333e-b081-4290-b237-c960abb43372",
+      "width": 24,
+      "x": 430,
+      "y": 800,
+      "zOrder": 15,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0.9917355371900827,
+      "height": 1080,
+      "layer": "",
+      "name": "Background",
+      "persistentUuid": "bcaaf4f4-3ac4-4730-9cca-5d486d014b90",
+      "width": 1920,
+      "x": 0,
+      "y": 0,
+      "zOrder": -10,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 3,
+      "height": 488,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Player",
+      "persistentUuid": "acc11c32-f2aa-40be-b068-d221bedbf65b",
+      "width": 651,
+      "x": 60,
+      "y": 675,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1.3863636363636358,
+      "height": 488,
+      "layer": "",
+      "name": "Opponent",
+      "persistentUuid": "0f5f7a18-5938-4fa3-bff0-f182e61ffe55",
+      "width": 700,
+      "x": 1237,
+      "y": 675,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Counter",
+      "persistentUuid": "670600b7-1575-47f3-9fe2-6f97bc00804d",
+      "width": 0,
+      "x": 951,
+      "y": 465,
+      "zOrder": 31,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 203.5714285714286,
+      "height": 70,
+      "layer": "",
+      "name": "BlueBar",
+      "persistentUuid": "5f985cc4-dd5e-40cc-9d1f-87792a19993e",
+      "width": 850,
+      "x": 580,
+      "y": 240,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "BarArrow",
+      "persistentUuid": "d2ac3cc4-4ba1-4af6-bf3d-6a8dc180735f",
+      "width": 0,
+      "x": 972,
+      "y": 317,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 70,
+      "layer": "",
+      "name": "RedBar",
+      "persistentUuid": "6f3b8c63-520f-4793-bf5c-237482a4d858",
+      "width": 850,
+      "x": 580,
+      "y": 240,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    }
+  ],
+  "objects": [
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Background",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Screenshot-court.webp",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 1000,
+                        "y": 0
+                      },
+                      {
+                        "x": 1000,
+                        "y": 563
+                      },
+                      {
+                        "x": 0,
+                        "y": 563
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Player",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Phoenix",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 18
+                      },
+                      {
+                        "x": 125,
+                        "y": 18
+                      },
+                      {
+                        "x": 125,
+                        "y": 160
+                      },
+                      {
+                        "x": 0,
+                        "y": 160
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Opponent",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "Apollo_and_Document_2",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Edgeworth-normal29.webp",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 136,
+                        "y": 17
+                      },
+                      {
+                        "x": 240,
+                        "y": 17
+                      },
+                      {
+                        "x": 240,
+                        "y": 160
+                      },
+                      {
+                        "x": 136,
+                        "y": 160
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "objectsFolderStructure": {
+    "folderName": "__ROOT",
+    "children": [
+      {
+        "objectName": "Background"
+      },
+      {
+        "objectName": "Player"
+      },
+      {
+        "objectName": "Opponent"
+      }
+    ]
+  },
+  "events": [
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "DepartScene"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetFullScreen"
+          },
+          "parameters": [
+            "",
+            "yes",
+            ""
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "LevelState",
+                "=",
+                "\"Wait\""
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "Counter",
+                "=",
+                "(SceneWindowWidth() * 0.5) - (Counter.Width() * 0.5)",
+                "=",
+                "(SceneWindowHeight() * 0.5) - (Counter.Height() * 0.5)"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "Counter",
+                "Text",
+                "=",
+                "\"3\""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "Start",
+                "2",
+                "60",
+                "0.5"
+              ]
+            },
+            {
+              "type": {
+                "value": "ShakeObject::ShakeObject_PositionAngle::ShakeObject_PositionAngle"
+              },
+              "parameters": [
+                "Counter",
+                "ShakeObject_PositionAngle",
+                "0.2",
+                "2",
+                "2",
+                "2",
+                "0.08",
+                "yes",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "Counter",
+                "Text",
+                "=",
+                "\"2\""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "Start",
+                "2",
+                "90",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "ShakeObject::ShakeObject_PositionAngle::ShakeObject_PositionAngle"
+              },
+              "parameters": [
+                "Counter",
+                "ShakeObject_PositionAngle",
+                "0.2",
+                "4",
+                "4",
+                "4",
+                "0.08",
+                "yes",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "Counter",
+                "Text",
+                "=",
+                "\"1\""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "Start",
+                "2",
+                "120",
+                "1.5"
+              ]
+            },
+            {
+              "type": {
+                "value": "ShakeObject::ShakeObject_PositionAngle::ShakeObject_PositionAngle"
+              },
+              "parameters": [
+                "Counter",
+                "ShakeObject_PositionAngle",
+                "0.2",
+                "7",
+                "7",
+                "7",
+                "0.08",
+                "yes",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Counter",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "LevelState",
+                "=",
+                "\"Beat\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "FlippableCapability::FlippableBehavior::FlipY"
+              },
+              "parameters": [
+                "BarArrow",
+                "Flippable",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberObjectVariable"
+              },
+              "parameters": [
+                "BlueBar",
+                "Cache.SegmentWidth",
+                "=",
+                "BlueBar.Width() / BlueBar.MaxValue()"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberObjectVariable"
+              },
+              "parameters": [
+                "BarArrow",
+                "Cache.StartX",
+                "=",
+                "BlueBar.X() - (BarArrow.Width() * 0.5)"
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreY"
+              },
+              "parameters": [
+                "BarArrow",
+                "=",
+                "BlueBar.Y() + BarArrow.Height()"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Game Loop"
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BooleanVariable"
+          },
+          "parameters": [
+            "Pause",
+            "=",
+            ""
+          ]
+        }
+      ],
+      "actions": [],
+      "events": [
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "folded": true,
+          "name": "Update",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "MettreX"
+                  },
+                  "parameters": [
+                    "BarArrow",
+                    "=",
+                    "BarArrow.Cache.StartX + (BlueBar.Cache.SegmentWidth * BlueBar.Value())"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Controls",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "Space"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "ObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "Note",
+                        "touched",
+                        "True"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "Note",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PlaySound"
+                      },
+                      "parameters": [
+                        "",
+                        "Correct",
+                        "2",
+                        "100",
+                        "RandomFloatInRange(0.9, 1.1)"
+                      ]
+                    }
+                  ],
+                  "events": [
+                    {
+                      "disabled": true,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
+                          },
+                          "parameters": [
+                            "BlueBar",
+                            "+",
+                            "1",
+                            ""
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "StringVariable"
+                      },
+                      "parameters": [
+                        "LevelState",
+                        "=",
+                        "\"Story\""
+                      ]
+                    }
+                  ],
+                  "actions": []
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Beat Loop",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "LevelState",
+                    "=",
+                    "\"Beat\""
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Beat.Index",
+                        "=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ResetTimer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Beat\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CompareTimer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Beat\"",
+                        ">=",
+                        "Beat.Notes[Beat.Index]"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetBooleanVariable"
+                      },
+                      "parameters": [
+                        "Spawn",
+                        "True",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Beat.Index",
+                        "+",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ResetTimer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Beat\""
+                      ]
+                    }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "NumberVariable"
+                          },
+                          "parameters": [
+                            "Beat.Index",
+                            ">=",
+                            "Beat.Length"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetNumberVariable"
+                          },
+                          "parameters": [
+                            "Beat.Index",
+                            "=",
+                            "0"
+                          ]
+                        }
+                      ],
+                      "events": [
+                        {
+                          "disabled": true,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "SetStringVariable"
+                              },
+                              "parameters": [
+                                "LevelState",
+                                "=",
+                                "\"Story\""
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Spawning",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "LevelState",
+                    "=",
+                    "\"Beat\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "Spawn",
+                    "True",
+                    "Beat.length"
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "Note",
+                        "0",
+                        "0",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "MettreXY"
+                      },
+                      "parameters": [
+                        "Note",
+                        "=",
+                        "Note.startPos.x",
+                        "=",
+                        "Note.startPos.y"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AddForceXY"
+                      },
+                      "parameters": [
+                        "Note",
+                        "Note.speed",
+                        "0",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetBooleanVariable"
+                      },
+                      "parameters": [
+                        "Spawn",
+                        "False",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "DebuggerTools::ConsoleLog"
+                      },
+                      "parameters": [
+                        "\"NO\"",
+                        "\"info\"",
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "folded": true,
+          "name": "Delete Notes",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Note",
+                    "touched",
+                    "False"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Note",
+                    "JudjmentLine",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Note",
+                    "touched",
+                    "True"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Note",
+                    "touched",
+                    "True"
+                  ]
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Note",
+                    "JudjmentLine",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Note",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "Miss",
+                    "2",
+                    "100",
+                    "RandomFloatInRange(0.9, 1.1)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
+                  },
+                  "parameters": [
+                    "BlueBar",
+                    "-",
+                    "1",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BooleanVariable"
+          },
+          "parameters": [
+            "Pause",
+            "True",
+            ""
+          ]
+        }
+      ],
+      "actions": []
+    }
+  ],
+  "layers": [
+    {
+      "ambientLightColorB": 32,
+      "ambientLightColorG": 0,
+      "ambientLightColorR": 0,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 0.1,
+      "cameraType": "perspective",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "",
+      "renderingType": "2d",
+      "visibility": true,
+      "cameras": [
+        {
+          "defaultSize": true,
+          "defaultViewport": true,
+          "height": 0,
+          "viewportBottom": 1,
+          "viewportLeft": 0,
+          "viewportRight": 1,
+          "viewportTop": 0,
+          "width": 0
+        }
+      ],
+      "effects": []
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "اللعبة",
+      "renderingType": "2d",
+      "visibility": true,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Light",
+          "doubleParameters": {
+            "elevation": 45,
+            "intensity": 1,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "groundColor": "64;64;64",
+            "skyColor": "255;255;255",
+            "top": "Y-"
+          },
+          "booleanParameters": {}
+        }
+      ]
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "الأعلام",
+      "renderingType": "2d",
+      "visibility": true,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Light",
+          "doubleParameters": {
+            "elevation": 45,
+            "intensity": 1,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "groundColor": "64;64;64",
+            "skyColor": "255;255;255",
+            "top": "Y-"
+          },
+          "booleanParameters": {}
+        }
+      ]
+    },
+    {
+      "ambientLightColorB": 12,
+      "ambientLightColorG": 6026736,
+      "ambientLightColorR": 10902792,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 0.1,
+      "cameraType": "perspective",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "الواجهة",
+      "renderingType": "2d",
+      "visibility": true,
+      "cameras": [],
+      "effects": []
+    }
+  ],
+  "behaviorsSharedData": [
+    {
+      "name": "Animation",
+      "type": "AnimatableCapability::AnimatableBehavior"
+    },
+    {
+      "name": "Effect",
+      "type": "EffectCapability::EffectBehavior"
+    },
+    {
+      "name": "Flippable",
+      "type": "FlippableCapability::FlippableBehavior"
+    },
+    {
+      "name": "Opacity",
+      "type": "OpacityCapability::OpacityBehavior"
+    },
+    {
+      "name": "Resizable",
+      "type": "ResizableCapability::ResizableBehavior"
+    },
+    {
+      "name": "Scale",
+      "type": "ScalableCapability::ScalableBehavior"
+    },
+    {
+      "name": "ShakeObject_PositionAngle",
+      "type": "ShakeObject::ShakeObject_PositionAngle"
+    },
+    {
+      "name": "Text",
+      "type": "TextContainerCapability::TextContainerBehavior"
+    },
+    {
+      "name": "Tween",
+      "type": "Tween::TweenBehavior"
+    }
+  ]
+}
