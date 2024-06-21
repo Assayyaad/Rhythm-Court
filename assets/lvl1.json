@@ -1,0 +1,47 @@
+{
+  "Index": 0,
+  "Start": [
+    {
+      "Name": "Phoenix",
+      "Value": "Mr. Jayoma uhhh thanks for having me here."
+    },
+    {
+      "Name": "Phoenix",
+      "Value": "Look man I'm going to be honest this case is causing me a lot of issues and I'm about to lose my job because of it."
+    },
+    {
+      "Name": "Phoenix",
+      "Value": "I've been falsely accused of sexual harrasement and the lady made it a public case."
+    },
+    {
+      "Name": "Phoenix",
+      "Value": "Mr Jayoma please do everything you can to save my reputation sir."
+    }
+  ],
+  "Middle": [
+    {
+      "Name": "Phoenix",
+      "Value": "Mr Jayoma please do everything you can to save my reputation sir."
+    }
+  ],
+  "Win": [
+    {
+      "Name": "Phoenix",
+      "Value": "Thanks for clarifying Mr. Jayoma. We trust that the jury will do you justice."
+    }
+  ],
+  "Lose": [
+    {
+      "Name": "Phoenix",
+      "Value": "Thank for joining us Mr. Jayoma."
+    },
+    {
+      "Name": "Phoenix",
+      "Value": "While we understand that you are only doing your job."
+    },
+    {
+      "Name": "Phoenix",
+      "Value": "At the end there is no place to sex offenders between us."
+    }
+  ]
+}

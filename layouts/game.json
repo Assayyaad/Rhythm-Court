@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.8081705091629856,
+    "zoomFactor": 0.47539441715469866,
     "windowMask": true
   },
   "objectsGroups": [
@@ -39,9 +39,15 @@
       "value": false
     },
     {
+      "folded": true,
       "name": "Beat",
       "type": "structure",
       "children": [
+        {
+          "name": "Damage",
+          "type": "number",
+          "value": 1
+        },
         {
           "folded": true,
           "name": "Index",
@@ -92,6 +98,134 @@
               "folded": true,
               "type": "number",
               "value": 0.4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Story",
+      "type": "structure",
+      "children": [
+        {
+          "name": "Index",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "Lose",
+          "type": "array",
+          "children": [
+            {
+              "folded": true,
+              "type": "string",
+              "value": "Thank for joining us Mr. Jayoma."
+            },
+            {
+              "folded": true,
+              "type": "string",
+              "value": "While we understand that you are only doing your job."
+            },
+            {
+              "folded": true,
+              "type": "string",
+              "value": "At the end there is no place to sex offenders between us."
+            }
+          ]
+        },
+        {
+          "folded": true,
+          "name": "Middle",
+          "type": "array",
+          "children": [
+            {
+              "type": "structure",
+              "children": [
+                {
+                  "name": "Name",
+                  "type": "string",
+                  "value": "Phoenix"
+                },
+                {
+                  "folded": true,
+                  "name": "Name2",
+                  "type": "string",
+                  "value": "Mr Jayoma please do everything you can to save my reputation sir."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Start",
+          "type": "array",
+          "children": [
+            {
+              "folded": true,
+              "type": "structure",
+              "children": [
+                {
+                  "folded": true,
+                  "name": "Name",
+                  "type": "string",
+                  "value": "Phoenix"
+                },
+                {
+                  "folded": true,
+                  "name": "Value",
+                  "type": "string",
+                  "value": "Mr. Jayoma uhhh thanks for having me here."
+                }
+              ]
+            },
+            {
+              "type": "structure",
+              "children": [
+                {
+                  "folded": true,
+                  "name": "Name",
+                  "type": "string",
+                  "value": "0Phoenix"
+                },
+                {
+                  "folded": true,
+                  "name": "Value",
+                  "type": "string",
+                  "value": "Look man I'm going to be honest this case is causing me a lot of issues and I'm about to lose my job because of it."
+                }
+              ]
+            },
+            {
+              "type": "string",
+              "value": "I've been falsely accused of sexual harrasement and the lady made it a public case."
+            },
+            {
+              "folded": true,
+              "type": "string",
+              "value": "Mr Jayoma please do everything you can to save my reputation sir."
+            }
+          ]
+        },
+        {
+          "folded": true,
+          "name": "Win",
+          "type": "array",
+          "children": [
+            {
+              "type": "structure",
+              "children": [
+                {
+                  "name": "Name",
+                  "type": "string",
+                  "value": "Phoenix"
+                },
+                {
+                  "folded": true,
+                  "name": "Value",
+                  "type": "string",
+                  "value": "Thanks for clarifying Mr. Jayoma. We trust that the jury will do you justice."
+                }
+              ]
             }
           ]
         }
@@ -175,7 +309,7 @@
       "width": 0,
       "x": 951,
       "y": 465,
-      "zOrder": 31,
+      "zOrder": 100,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -239,7 +373,7 @@
       "width": 1070,
       "x": 430,
       "y": 450,
-      "zOrder": 33,
+      "zOrder": 20,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -248,14 +382,14 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 176,
+      "height": 134,
       "keepRatio": true,
       "layer": "",
       "name": "DialogueCharacter",
       "persistentUuid": "179de455-92c6-4b22-bd33-2cb1fb8b37b6",
-      "width": 100,
-      "x": 457,
-      "y": 474,
+      "width": 134,
+      "x": 485,
+      "y": 504,
       "zOrder": 34,
       "numberProperties": [],
       "stringProperties": [],
@@ -264,15 +398,15 @@
     {
       "angle": 0,
       "customSize": true,
-      "depth": 1,
-      "height": 57,
+      "depth": 1.4545454545454544,
+      "height": 64,
       "keepRatio": true,
       "layer": "",
       "name": "DialogueIcon",
       "persistentUuid": "8e15d608-1587-402a-adeb-6d59f3c354c8",
-      "width": 44,
-      "x": 583,
-      "y": 602,
+      "width": 64,
+      "x": 1370,
+      "y": 580,
       "zOrder": 35,
       "numberProperties": [],
       "stringProperties": [],
@@ -283,14 +417,13 @@
       "customSize": true,
       "depth": 1,
       "height": 35,
-      "keepRatio": true,
       "layer": "",
       "name": "DialogueName",
       "persistentUuid": "bb7b2e42-5c67-4a53-82d4-516f63cdab9d",
-      "width": 123,
-      "x": 589,
-      "y": 495,
-      "zOrder": 36,
+      "width": 750,
+      "x": 640,
+      "y": 490,
+      "zOrder": 30,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -298,16 +431,15 @@
     {
       "angle": 0,
       "customSize": true,
-      "depth": 1,
-      "height": 118,
-      "keepRatio": true,
+      "depth": 0.9778357235984353,
+      "height": 115,
       "layer": "",
       "name": "DialogueText",
       "persistentUuid": "d795e014-ee7e-4064-bbde-96cec31435bd",
-      "width": 829,
-      "x": 579,
-      "y": 539,
-      "zOrder": 37,
+      "width": 750,
+      "x": 640,
+      "y": 530,
+      "zOrder": 30,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -528,7 +660,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "WhiteSquare2",
+                  "image": "DialoguePanel",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -548,16 +680,16 @@
                         "y": 0
                       },
                       {
-                        "x": 8,
+                        "x": 1070,
                         "y": 0
                       },
                       {
-                        "x": 8,
-                        "y": 8
+                        "x": 1070,
+                        "y": 240
                       },
                       {
                         "x": 0,
-                        "y": 8
+                        "y": 240
                       }
                     ]
                   ]
@@ -579,7 +711,7 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "",
+          "name": "Phoenix",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -588,7 +720,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\square_green.png",
+                  "image": "assets\\Icon-Phoenix.webp",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -605,19 +737,115 @@
                     [
                       {
                         "x": 0,
-                        "y": 0
+                        "y": 1
                       },
                       {
-                        "x": 8,
-                        "y": 0
+                        "x": 57,
+                        "y": 1
                       },
                       {
-                        "x": 8,
-                        "y": 8
+                        "x": 57,
+                        "y": 58
                       },
                       {
                         "x": 0,
-                        "y": 8
+                        "y": 58
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Edgeworth",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Icon-Edgeworth.webp",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 1
+                      },
+                      {
+                        "x": 57,
+                        "y": 1
+                      },
+                      {
+                        "x": 57,
+                        "y": 58
+                      },
+                      {
+                        "x": 0,
+                        "y": 58
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Apollo",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Icon-Apollo.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 1
+                      },
+                      {
+                        "x": 57,
+                        "y": 1
+                      },
+                      {
+                        "x": 57,
+                        "y": 58
+                      },
+                      {
+                        "x": 0,
+                        "y": 58
                       }
                     ]
                   ]
@@ -648,7 +876,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\square_yellow.png",
+                  "image": "assets\\kenney_input-prompts\\keyboard_space_icon.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -664,20 +892,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 0,
-                        "y": 0
-                      },
-                      {
-                        "x": 8,
-                        "y": 0
-                      },
-                      {
                         "x": 8,
                         "y": 8
                       },
                       {
-                        "x": 0,
+                        "x": 56,
                         "y": 8
+                      },
+                      {
+                        "x": 56,
+                        "y": 56
+                      },
+                      {
+                        "x": 8,
+                        "y": 56
                       }
                     ]
                   ]
@@ -1013,7 +1241,13 @@
                 "=",
                 "BlueBar.Y() + BarArrow.Height()"
               ]
-            },
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
             {
               "type": {
                 "value": "DialogBox::DialogBoxBackGround::Setup"
@@ -1025,6 +1259,40 @@
                 "DialogueCharacter",
                 "DialogueText",
                 "DialogueIcon",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "FileSystem::LoadVariableFromJSONFileSync"
+              },
+              "parameters": [
+                "Story",
+                "\"lvl1.json\"",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "DialogBox::DialogBoxBackGround::Open"
+              },
+              "parameters": [
+                "DialogueBg",
+                "DialogBoxBackGround",
+                "Story.Start[Story.Index].Name",
+                "Story.Start[Story.Index].Name",
+                "Story.Start[Story.Index].Value",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "DebuggerTools::ConsoleLog"
+              },
+              "parameters": [
+                "\"Name: \" + Story.Start[Story.Index].Name",
+                "\"info\"",
                 ""
               ]
             }
@@ -1332,11 +1600,20 @@
                             "=",
                             "0"
                           ]
+                        },
+                        {
+                          "type": {
+                            "value": "DebuggerTools::ConsoleLog"
+                          },
+                          "parameters": [
+                            "\"WIN\"",
+                            "\"info\"",
+                            ""
+                          ]
                         }
                       ],
                       "events": [
                         {
-                          "disabled": true,
                           "type": "BuiltinCommonInstructions::Standard",
                           "conditions": [],
                           "actions": [
@@ -1443,16 +1720,6 @@
                         "Spawn",
                         "False",
                         "0"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "DebuggerTools::ConsoleLog"
-                      },
-                      "parameters": [
-                        "\"NO\"",
-                        "\"info\"",
-                        ""
                       ]
                     }
                   ]
@@ -1593,6 +1860,25 @@
         }
       ],
       "actions": []
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "DialogBox::DialogBoxBackGround::Open"
+          },
+          "parameters": [
+            "DialogueBg",
+            "DialogBoxBackGround",
+            "Story.Start[Story.Index].Name",
+            "Story.Start[Story.Index].Name",
+            "Story.Start[Story.Index].Value",
+            ""
+          ]
+        }
+      ]
     }
   ],
   "layers": [

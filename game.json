@@ -161,7 +161,7 @@
         "kind": "image",
         "metadata": "",
         "name": "Bg2",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": false
       },
       {
@@ -170,7 +170,7 @@
         "kind": "image",
         "metadata": "",
         "name": "Phoenix",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": true
       },
       {
@@ -179,7 +179,7 @@
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "Apollo",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": true
       },
       {
@@ -188,7 +188,7 @@
         "kind": "image",
         "metadata": "",
         "name": "Edgeworth",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": false
       },
       {
@@ -236,18 +236,9 @@
         "file": "assets/kenney_board-game-icons/PNG/Default (64px)/dice_empty.png",
         "kind": "image",
         "metadata": "",
-        "name": "assets\\kenney_board-game-icons\\PNG\\Default (64px)\\dice_empty.png",
+        "name": "Note",
         "smoothed": true,
         "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/square_white.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "WhiteSquare2",
-        "smoothed": true,
-        "userAdded": false
       },
       {
         "alwaysLoaded": false,
@@ -275,6 +266,60 @@
         "name": "assets\\square_yellow.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/kenney_fantasy-ui-borders/panel-009.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "DialoguePanel",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Icon-Phoenix.webp",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Icon-Phoenix.webp",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Icon-Edgeworth.webp",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Icon-Edgeworth.webp",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Icon-Apollo.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Icon-Apollo.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_space_icon_outline.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\kenney_input-prompts\\Keyboard & Mouse\\Default\\keyboard_space_icon_outline.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/kenney_input-prompts/keyboard_space_icon.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\kenney_input-prompts\\keyboard_space_icon.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -551,7 +596,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\kenney_board-game-icons\\PNG\\Default (64px)\\dice_empty.png",
+                  "image": "Note",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
