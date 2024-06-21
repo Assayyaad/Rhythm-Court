@@ -157,7 +157,7 @@
       "name": "Opponent",
       "persistentUuid": "0f5f7a18-5938-4fa3-bff0-f182e61ffe55",
       "width": 700,
-      "x": 1237,
+      "x": 1210,
       "y": 675,
       "zOrder": 1,
       "numberProperties": [],
@@ -250,7 +250,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "Screenshot-court.webp",
+                  "image": "Bg2",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -371,7 +371,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "Edgeworth-normal29.webp",
+                  "image": "Edgeworth",
                   "points": [],
                   "originPoint": {
                     "name": "origine",

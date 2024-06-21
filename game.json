@@ -108,15 +108,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/white_square.png",
-        "kind": "image",
-        "metadata": "{\"localFilePath\":\"assets/أحمر.png\",\"extension\":\".png\",\"pskl\":{}}",
-        "name": "WhiteSquare",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
         "file": "assets/correct.wav",
         "kind": "audio",
         "metadata": "",
@@ -166,6 +157,15 @@
       },
       {
         "alwaysLoaded": false,
+        "file": "assets/bg2.webp",
+        "kind": "image",
+        "metadata": "",
+        "name": "Bg2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
         "file": "assets/Phoenix-normal29.webp",
         "kind": "image",
         "metadata": "",
@@ -181,6 +181,15 @@
         "name": "Apollo",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Edgeworth-normal29.webp",
+        "kind": "image",
+        "metadata": "",
+        "name": "Edgeworth",
+        "smoothed": true,
+        "userAdded": false
       },
       {
         "alwaysLoaded": false,
@@ -215,28 +224,10 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/note.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Note",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/red_bar_border.png",
         "kind": "image",
         "metadata": "",
         "name": "RedFillBar",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/kenney_fantasy-ui-borders/PNG/Double/Transparent center/panel-transparent-center-010.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\kenney_fantasy-ui-borders\\PNG\\Double\\Transparent center\\panel-transparent-center-010.png",
         "smoothed": true,
         "userAdded": true
       },
@@ -251,19 +242,37 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "Screenshot-court.webp",
+        "file": "assets/square_white.png",
         "kind": "image",
         "metadata": "",
-        "name": "Screenshot-court.webp",
+        "name": "WhiteSquare2",
         "smoothed": true,
         "userAdded": false
       },
       {
         "alwaysLoaded": false,
-        "file": "Edgeworth-normal29.webp",
+        "file": "assets/square_white.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/أحمر.png\",\"extension\":\".png\",\"pskl\":{}}",
+        "name": "WhiteSquare",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/square_green.png",
         "kind": "image",
         "metadata": "",
-        "name": "Edgeworth-normal29.webp",
+        "name": "assets\\square_green.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/square_yellow.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\square_yellow.png",
         "smoothed": true,
         "userAdded": false
       }
@@ -704,6 +713,10 @@
   ],
   "externalEvents": [],
   "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/dialogbox"
+    },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/autotyping"
