@@ -320,6 +320,42 @@
         "name": "assets\\kenney_input-prompts\\keyboard_space_icon.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Phoenix-normal29.webp",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Phoenix-normal29.webp",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Edgeworth-normal29.webp",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Edgeworth-normal29.webp",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/Roboto-Regular.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "e96b43b0ca3fd7775d75a702f44cd1b0dfd325e1db317f7cba84efdf572571fe_Roboto-Regular.ttf",
+        "userAdded": true,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/e96b43b0ca3fd7775d75a702f44cd1b0dfd325e1db317f7cba84efdf572571fe_Roboto-Regular.ttf",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "assets/LinLibertine_RB.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "assets\\LinLibertine_RB.ttf",
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -754,6 +790,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/game2"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/start-screen"
     }
   ],
   "externalEvents": [],
