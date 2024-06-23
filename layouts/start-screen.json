@@ -209,7 +209,7 @@
       "effects": [],
       "behaviors": [],
       "string": "Rhythm Court",
-      "font": "assets\\LinLibertine_RB.ttf",
+      "font": "LinLibertine_RB",
       "textAlignment": "left",
       "characterSize": 250,
       "color": {
@@ -232,7 +232,7 @@
         "smoothed": true,
         "underlined": false,
         "text": "Rhythm Court",
-        "font": "assets\\LinLibertine_RB.ttf",
+        "font": "LinLibertine_RB",
         "textAlignment": "left",
         "characterSize": 250,
         "color": "28;130;214"
@@ -329,6 +329,10 @@
     {
       "name": "Animation",
       "type": "AnimatableCapability::AnimatableBehavior"
+    },
+    {
+      "name": "DialogBoxBackGround",
+      "type": "DialogBox::DialogBoxBackGround"
     },
     {
       "name": "Effect",
