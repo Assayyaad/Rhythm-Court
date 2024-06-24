@@ -1,0 +1,2151 @@
+{
+  "b": 252,
+  "disableInputWhenNotFocused": true,
+  "mangledName": "Level2",
+  "name": "Level2",
+  "r": 165,
+  "standardSortMethod": true,
+  "stopSoundsOnStartup": true,
+  "title": "Rhythm Court",
+  "v": 206,
+  "uiSettings": {
+    "grid": false,
+    "gridType": "rectangular",
+    "gridWidth": 4,
+    "gridHeight": 4,
+    "gridOffsetX": 0,
+    "gridOffsetY": 0,
+    "gridColor": 10401023,
+    "gridAlpha": 0.8,
+    "snap": false,
+    "zoomFactor": 0.5428330826015015,
+    "windowMask": true
+  },
+  "objectsGroups": [
+    {
+      "name": "DialogueGroup",
+      "objects": []
+    },
+    {
+      "name": "BeatGroup",
+      "objects": []
+    }
+  ],
+  "variables": [
+    {
+      "folded": true,
+      "name": "Miss",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "folded": true,
+      "name": "Stories",
+      "type": "string",
+      "value": "Start"
+    },
+    {
+      "folded": true,
+      "name": "Beat",
+      "type": "structure",
+      "children": [
+        {
+          "name": "Damage",
+          "type": "number",
+          "value": 1
+        },
+        {
+          "folded": true,
+          "name": "Index",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "folded": true,
+          "name": "Length",
+          "type": "number",
+          "value": 7
+        },
+        {
+          "name": "Notes",
+          "type": "array",
+          "children": [
+            {
+              "folded": true,
+              "type": "number",
+              "value": 1
+            },
+            {
+              "folded": true,
+              "type": "number",
+              "value": 0.4
+            },
+            {
+              "folded": true,
+              "type": "number",
+              "value": 0.4
+            },
+            {
+              "folded": true,
+              "type": "number",
+              "value": 0.8
+            },
+            {
+              "folded": true,
+              "type": "number",
+              "value": 1
+            },
+            {
+              "folded": true,
+              "type": "number",
+              "value": 0.6
+            },
+            {
+              "folded": true,
+              "type": "number",
+              "value": 0.4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Story",
+      "type": "structure",
+      "children": [
+        {
+          "name": "Index",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "folded": true,
+          "name": "Lose",
+          "type": "structure",
+          "children": [
+            {
+              "folded": true,
+              "name": "Dialogues",
+              "type": "array",
+              "children": [
+                {
+                  "folded": true,
+                  "type": "structure",
+                  "children": [
+                    {
+                      "folded": true,
+                      "name": "Name",
+                      "type": "string",
+                      "value": "Phoenix"
+                    },
+                    {
+                      "folded": true,
+                      "name": "Value",
+                      "type": "string",
+                      "value": "Thank for joining us Mr. Jayoma."
+                    }
+                  ]
+                },
+                {
+                  "folded": true,
+                  "type": "structure",
+                  "children": [
+                    {
+                      "name": "Name",
+                      "type": "string",
+                      "value": "Phoenix"
+                    },
+                    {
+                      "name": "Value",
+                      "type": "string",
+                      "value": "While we understand that you are only doing your job."
+                    }
+                  ]
+                },
+                {
+                  "folded": true,
+                  "type": "structure",
+                  "children": [
+                    {
+                      "name": "Name",
+                      "type": "string",
+                      "value": "Phoenix"
+                    },
+                    {
+                      "folded": true,
+                      "name": "Value",
+                      "type": "string",
+                      "value": "At the end there is no place to sex offenders between us."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "Length",
+              "type": "number",
+              "value": 3
+            }
+          ]
+        },
+        {
+          "folded": true,
+          "name": "Middle",
+          "type": "structure",
+          "children": [
+            {
+              "folded": true,
+              "name": "Dialogues",
+              "type": "array",
+              "children": [
+                {
+                  "folded": true,
+                  "type": "structure",
+                  "children": [
+                    {
+                      "name": "Name",
+                      "type": "string",
+                      "value": "Phoenix"
+                    },
+                    {
+                      "folded": true,
+                      "name": "Value",
+                      "type": "string",
+                      "value": "Mr Jayoma please do everything you can to save my reputation sir."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "Length",
+              "type": "number",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "folded": true,
+          "name": "Start",
+          "type": "structure",
+          "children": [
+            {
+              "folded": true,
+              "name": "Dialogues",
+              "type": "array",
+              "children": [
+                {
+                  "folded": true,
+                  "type": "structure",
+                  "children": [
+                    {
+                      "folded": true,
+                      "name": "Name",
+                      "type": "string",
+                      "value": "Phoenix"
+                    },
+                    {
+                      "folded": true,
+                      "name": "Value",
+                      "type": "string",
+                      "value": "Mr. Jayoma uhhh thanks for having me here."
+                    }
+                  ]
+                },
+                {
+                  "folded": true,
+                  "type": "structure",
+                  "children": [
+                    {
+                      "folded": true,
+                      "name": "Name",
+                      "type": "string",
+                      "value": "Phoenix"
+                    },
+                    {
+                      "folded": true,
+                      "name": "Value",
+                      "type": "string",
+                      "value": "Look man I'm going to be honest this case is causing me a lot of issues and I'm about to lose my job because of it."
+                    }
+                  ]
+                },
+                {
+                  "folded": true,
+                  "type": "structure",
+                  "children": [
+                    {
+                      "folded": true,
+                      "name": "Name",
+                      "type": "string",
+                      "value": "Phoenix"
+                    },
+                    {
+                      "name": "Value",
+                      "type": "string",
+                      "value": "I've been falsely accused of sexual harrasement and the lady made it a public case."
+                    }
+                  ]
+                },
+                {
+                  "folded": true,
+                  "type": "structure",
+                  "children": [
+                    {
+                      "name": "Name",
+                      "type": "string",
+                      "value": "Phoenix"
+                    },
+                    {
+                      "name": "Value",
+                      "type": "string",
+                      "value": "Mr Jayoma please do everything you can to save my reputation sir."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "Length",
+              "type": "number",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "folded": true,
+          "name": "Win",
+          "type": "structure",
+          "children": [
+            {
+              "folded": true,
+              "name": "Dialogues",
+              "type": "array",
+              "children": [
+                {
+                  "folded": true,
+                  "type": "structure",
+                  "children": [
+                    {
+                      "name": "Name",
+                      "type": "string",
+                      "value": "Phoenix"
+                    },
+                    {
+                      "folded": true,
+                      "name": "Value",
+                      "type": "string",
+                      "value": "Thanks for clarifying Mr. Jayoma. We trust that the jury will do you justice."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Length",
+              "type": "number",
+              "value": 1
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "instances": [
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 239,
+      "layer": "Notes",
+      "name": "JudjmentLine",
+      "persistentUuid": "4f74333e-b081-4290-b237-c960abb43372",
+      "width": 24,
+      "x": 430,
+      "y": 800,
+      "zOrder": 15,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1.3863636363636358,
+      "height": 488,
+      "layer": "",
+      "name": "Opponent",
+      "persistentUuid": "0f5f7a18-5938-4fa3-bff0-f182e61ffe55",
+      "width": 700,
+      "x": 1210,
+      "y": 675,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 203.5714285714286,
+      "height": 70,
+      "layer": "",
+      "name": "BlueBar",
+      "persistentUuid": "5f985cc4-dd5e-40cc-9d1f-87792a19993e",
+      "width": 850,
+      "x": 580,
+      "y": 240,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "BarArrow",
+      "persistentUuid": "d2ac3cc4-4ba1-4af6-bf3d-6a8dc180735f",
+      "width": 0,
+      "x": 972,
+      "y": 317,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 70,
+      "layer": "",
+      "name": "RedBar",
+      "persistentUuid": "6f3b8c63-520f-4793-bf5c-237482a4d858",
+      "width": 850,
+      "x": 580,
+      "y": 240,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 1080,
+      "layer": "",
+      "name": "Background",
+      "persistentUuid": "551b4c66-b700-4681-9088-124c3566ab26",
+      "width": 1920,
+      "x": 0,
+      "y": 0,
+      "zOrder": -10,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 488,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Player",
+      "persistentUuid": "1091aa26-f249-43e2-b866-82406b978f1a",
+      "width": 650,
+      "x": 60,
+      "y": 675,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 2,
+      "height": 240,
+      "layer": "Dialogue",
+      "name": "DialogueBg",
+      "persistentUuid": "3bf610d2-2dac-40ba-afdc-56a96c27656e",
+      "width": 1070,
+      "x": 430,
+      "y": 800,
+      "zOrder": 20,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 35,
+      "layer": "Dialogue",
+      "name": "DialogueName",
+      "persistentUuid": "57b4904b-e23b-4f9d-add0-b78a0d4e95ff",
+      "width": 750,
+      "x": 640,
+      "y": 840,
+      "zOrder": 30,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0.9778357235984353,
+      "height": 115,
+      "layer": "Dialogue",
+      "name": "DialogueText",
+      "persistentUuid": "5eca48f8-3f49-40f7-881b-15c81e5879d4",
+      "width": 750,
+      "x": 640,
+      "y": 880,
+      "zOrder": 30,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1.4545454545454544,
+      "height": 64,
+      "keepRatio": true,
+      "layer": "Dialogue",
+      "name": "DialogueIcon",
+      "persistentUuid": "62576139-9886-411e-aa31-97b4c4cbe5da",
+      "width": 64,
+      "x": 1370,
+      "y": 930,
+      "zOrder": 35,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 134,
+      "keepRatio": true,
+      "layer": "Dialogue",
+      "name": "DialogueCharacter",
+      "persistentUuid": "331c9d99-7e9f-4a8d-b2ef-2cd3cbc95c82",
+      "width": 134,
+      "x": 485,
+      "y": 850,
+      "zOrder": 34,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    }
+  ],
+  "objects": [
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Opponent",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "Apollo_and_Document_2",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Edgeworth",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 136,
+                        "y": 17
+                      },
+                      {
+                        "x": 240,
+                        "y": 17
+                      },
+                      {
+                        "x": 240,
+                        "y": 160
+                      },
+                      {
+                        "x": 136,
+                        "y": 160
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "objectsFolderStructure": {
+    "folderName": "__ROOT",
+    "children": [
+      {
+        "objectName": "Opponent"
+      }
+    ]
+  },
+  "events": [
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Initialisation"
+    },
+    {
+      "disabled": true,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "SetWindowSize"
+          },
+          "parameters": [
+            "",
+            "960",
+            "540",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "DepartScene"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetFullScreen"
+          },
+          "parameters": [
+            "",
+            "yes",
+            ""
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "LevelState",
+                "=",
+                "\"Story\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Story.Index",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "Stories",
+                "=",
+                "\"Start\""
+              ]
+            },
+            {
+              "type": {
+                "value": "DialogBox::DialogBoxBackGround::Setup"
+              },
+              "parameters": [
+                "DialogueBg",
+                "DialogBoxBackGround",
+                "DialogueName",
+                "DialogueCharacter",
+                "DialogueText",
+                "DialogueIcon",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "DialogBox::DialogBoxBackGround::Open"
+              },
+              "parameters": [
+                "DialogueBg",
+                "DialogBoxBackGround",
+                "Story[Stories].Dialogues[Story.Index].Name",
+                "Story[Stories].Dialogues[Story.Index].Name",
+                "Story[Stories].Dialogues[Story.Index].Value",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "FlippableCapability::FlippableBehavior::FlipY"
+              },
+              "parameters": [
+                "BarArrow",
+                "Flippable",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberObjectVariable"
+              },
+              "parameters": [
+                "BlueBar",
+                "Cache.SegmentWidth",
+                "=",
+                "BlueBar.Width() / BlueBar.MaxValue()"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberObjectVariable"
+              },
+              "parameters": [
+                "BarArrow",
+                "Cache.StartX",
+                "=",
+                "BlueBar.X() - (BarArrow.Width() * 0.5)"
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreY"
+              },
+              "parameters": [
+                "BarArrow",
+                "=",
+                "BlueBar.Y() + BarArrow.Height()"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "folded": true,
+      "name": "Logic Loop",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "MettreX"
+              },
+              "parameters": [
+                "BarArrow",
+                "=",
+                "BarArrow.Cache.StartX + (BlueBar.Cache.SegmentWidth * BlueBar.Value())"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "LevelState",
+                "=",
+                "\"Story\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ShowLayer"
+              },
+              "parameters": [
+                "JudjmentLine",
+                "\"Dialogue\""
+              ]
+            },
+            {
+              "type": {
+                "value": "HideLayer"
+              },
+              "parameters": [
+                "JudjmentLine",
+                "\"Notes\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "LevelState",
+                "=",
+                "\"Beat\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ShowLayer"
+              },
+              "parameters": [
+                "JudjmentLine",
+                "\"Notes\""
+              ]
+            },
+            {
+              "type": {
+                "value": "HideLayer"
+              },
+              "parameters": [
+                "JudjmentLine",
+                "\"Dialogue\""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "colorB": 228,
+              "colorG": 176,
+              "colorR": 74,
+              "creationTime": 0,
+              "name": "Spawn Notes",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CompareTimer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Beat\"",
+                        ">=",
+                        "Beat.Notes[Beat.Index]"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "NumberVariable"
+                          },
+                          "parameters": [
+                            "Beat.Index",
+                            "<",
+                            "Beat.Length"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetNumberVariable"
+                          },
+                          "parameters": [
+                            "Beat.Index",
+                            "+",
+                            "1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ResetTimer"
+                          },
+                          "parameters": [
+                            "",
+                            "\"Beat\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "Note",
+                            "0",
+                            "0",
+                            "\"Notes\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "MettreXY"
+                          },
+                          "parameters": [
+                            "Note",
+                            "=",
+                            "Note.startPos.x",
+                            "=",
+                            "Note.startPos.y"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "AddForceXY"
+                          },
+                          "parameters": [
+                            "Note",
+                            "Note.speed",
+                            "0",
+                            "1"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "NumberVariable"
+                          },
+                          "parameters": [
+                            "Beat.Index",
+                            ">=",
+                            "Beat.Length"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SceneInstancesCount"
+                          },
+                          "parameters": [
+                            "",
+                            "Note",
+                            "=",
+                            "0"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetBooleanVariable"
+                          },
+                          "parameters": [
+                            "Miss",
+                            "False",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetNumberVariable"
+                          },
+                          "parameters": [
+                            "Beat.Index",
+                            "=",
+                            "0"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ResetTimer"
+                          },
+                          "parameters": [
+                            "",
+                            "\"Beat\""
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": []
+            },
+            {
+              "colorB": 228,
+              "colorG": 176,
+              "colorR": 74,
+              "creationTime": 0,
+              "name": "Delete Notes",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "ObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "Note",
+                        "touched",
+                        "False"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Note",
+                        "JudjmentLine",
+                        "",
+                        "",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "Note",
+                        "touched",
+                        "True"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "ObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "Note",
+                        "touched",
+                        "True"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Note",
+                        "JudjmentLine",
+                        "",
+                        "",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "Note",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PlaySound"
+                      },
+                      "parameters": [
+                        "",
+                        "Miss",
+                        "2",
+                        "100",
+                        "RandomFloatInRange(0.9, 1.1)"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
+                      },
+                      "parameters": [
+                        "BlueBar",
+                        "-",
+                        "1",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetBooleanVariable"
+                      },
+                      "parameters": [
+                        "Miss",
+                        "True",
+                        ""
+                      ]
+                    }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "SceneInstancesCount"
+                          },
+                          "parameters": [
+                            "",
+                            "Note",
+                            "=",
+                            "0"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "NumberVariable"
+                          },
+                          "parameters": [
+                            "Beat.Index",
+                            ">=",
+                            "Beat.Length"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetBooleanVariable"
+                          },
+                          "parameters": [
+                            "Miss",
+                            "False",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetNumberVariable"
+                          },
+                          "parameters": [
+                            "Beat.Index",
+                            "=",
+                            "0"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ResetTimer"
+                          },
+                          "parameters": [
+                            "",
+                            "\"Beat\""
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": []
+            },
+            {
+              "colorB": 228,
+              "colorG": 176,
+              "colorR": 74,
+              "creationTime": 0,
+              "folded": true,
+              "name": "Story Transition",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "StringVariable"
+                      },
+                      "parameters": [
+                        "Stories",
+                        "=",
+                        "\"Start\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::Value"
+                      },
+                      "parameters": [
+                        "BlueBar",
+                        ">=",
+                        "BlueBar.MaxValue() * 0.75",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Story.Index",
+                        "=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetStringVariable"
+                      },
+                      "parameters": [
+                        "Stories",
+                        "=",
+                        "\"Middle\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetStringVariable"
+                      },
+                      "parameters": [
+                        "LevelState",
+                        "=",
+                        "\"Story\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "DialogBox::DialogBoxBackGround::ChangeNameImageText"
+                      },
+                      "parameters": [
+                        "DialogueBg",
+                        "DialogBoxBackGround",
+                        "Story[Stories].Dialogues[Story.Index].Name",
+                        "Story[Stories].Dialogues[Story.Index].Name",
+                        "Story[Stories].Dialogues[Story.Index].Value",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "StringVariable"
+                      },
+                      "parameters": [
+                        "Stories",
+                        "=",
+                        "\"Middle\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::Value"
+                      },
+                      "parameters": [
+                        "BlueBar",
+                        "=",
+                        "BlueBar.MaxValue()",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Story.Index",
+                        "=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetStringVariable"
+                      },
+                      "parameters": [
+                        "Stories",
+                        "=",
+                        "\"Win\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetStringVariable"
+                      },
+                      "parameters": [
+                        "LevelState",
+                        "=",
+                        "\"Story\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "DialogBox::DialogBoxBackGround::ChangeNameImageText"
+                      },
+                      "parameters": [
+                        "DialogueBg",
+                        "DialogBoxBackGround",
+                        "Story[Stories].Dialogues[Story.Index].Name",
+                        "Story[Stories].Dialogues[Story.Index].Name",
+                        "Story[Stories].Dialogues[Story.Index].Value",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::Value"
+                      },
+                      "parameters": [
+                        "BlueBar",
+                        "=",
+                        "0",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Story.Index",
+                        "=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetStringVariable"
+                      },
+                      "parameters": [
+                        "Stories",
+                        "=",
+                        "\"Lose\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetStringVariable"
+                      },
+                      "parameters": [
+                        "LevelState",
+                        "=",
+                        "\"Story\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "DialogBox::DialogBoxBackGround::ChangeNameImageText"
+                      },
+                      "parameters": [
+                        "DialogueBg",
+                        "DialogBoxBackGround",
+                        "Story[Stories].Dialogues[Story.Index].Name",
+                        "Story[Stories].Dialogues[Story.Index].Name",
+                        "Story[Stories].Dialogues[Story.Index].Value",
+                        ""
+                      ]
+                    }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::ForEach",
+                      "object": "Note",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Delete"
+                          },
+                          "parameters": [
+                            "Note",
+                            ""
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": []
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "folded": true,
+      "name": "Controls",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "Space"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "LevelState",
+                    "=",
+                    "\"Story\""
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "DialogBox::DialogBoxBackGround::IsTyping"
+                      },
+                      "parameters": [
+                        "DialogueBg",
+                        "DialogBoxBackGround",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "DialogBox::DialogBoxBackGround::SkipTyping"
+                      },
+                      "parameters": [
+                        "DialogueBg",
+                        "DialogBoxBackGround",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "DialogBox::DialogBoxBackGround::IsOpen"
+                      },
+                      "parameters": [
+                        "DialogueBg",
+                        "DialogBoxBackGround",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "NumberVariable"
+                          },
+                          "parameters": [
+                            "Story.Index",
+                            "<",
+                            "Story[Stories].Length"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetNumberVariable"
+                          },
+                          "parameters": [
+                            "Story.Index",
+                            "+",
+                            "1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "DialogBox::DialogBoxBackGround::ChangeNameImageText"
+                          },
+                          "parameters": [
+                            "DialogueBg",
+                            "DialogBoxBackGround",
+                            "Story[Stories].Dialogues[Story.Index].Name",
+                            "Story[Stories].Dialogues[Story.Index].Name",
+                            "Story[Stories].Dialogues[Story.Index].Value",
+                            ""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "NumberVariable"
+                          },
+                          "parameters": [
+                            "Story.Index",
+                            ">=",
+                            "Story[Stories].Length"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetNumberVariable"
+                          },
+                          "parameters": [
+                            "Story.Index",
+                            "=",
+                            "0"
+                          ]
+                        }
+                      ],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::Or"
+                              },
+                              "parameters": [],
+                              "subInstructions": [
+                                {
+                                  "type": {
+                                    "value": "StringVariable"
+                                  },
+                                  "parameters": [
+                                    "Stories",
+                                    "=",
+                                    "\"Start\""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "StringVariable"
+                                  },
+                                  "parameters": [
+                                    "Stories",
+                                    "=",
+                                    "\"Middle\""
+                                  ]
+                                }
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "SetBooleanVariable"
+                              },
+                              "parameters": [
+                                "Miss",
+                                "False",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "SetNumberVariable"
+                              },
+                              "parameters": [
+                                "Beat.Index",
+                                "=",
+                                "0"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "SetStringVariable"
+                              },
+                              "parameters": [
+                                "LevelState",
+                                "=",
+                                "\"Beat\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ResetTimer"
+                              },
+                              "parameters": [
+                                "",
+                                "\"Beat\""
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "StringVariable"
+                              },
+                              "parameters": [
+                                "Stories",
+                                "=",
+                                "\"Win\""
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "Scene"
+                              },
+                              "parameters": [
+                                "",
+                                "\"Game2\"",
+                                ""
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "StringVariable"
+                              },
+                              "parameters": [
+                                "Stories",
+                                "=",
+                                "\"Lose\""
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "Scene"
+                              },
+                              "parameters": [
+                                "",
+                                "\"Start Screen\"",
+                                ""
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "LevelState",
+                    "=",
+                    "\"Beat\""
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "ObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "Note",
+                        "touched",
+                        "True"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "Note",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PlaySound"
+                      },
+                      "parameters": [
+                        "",
+                        "Correct",
+                        "2",
+                        "100",
+                        "RandomFloatInRange(0.9, 1.1)"
+                      ]
+                    }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "SceneInstancesCount"
+                          },
+                          "parameters": [
+                            "",
+                            "Note",
+                            "=",
+                            "0"
+                          ]
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "BooleanVariable"
+                              },
+                              "parameters": [
+                                "Miss",
+                                "False",
+                                ""
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
+                              },
+                              "parameters": [
+                                "BlueBar",
+                                "+",
+                                "Beat.Damage",
+                                ""
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "NumberVariable"
+                              },
+                              "parameters": [
+                                "Beat.Index",
+                                ">=",
+                                "Beat.Length"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "SetBooleanVariable"
+                              },
+                              "parameters": [
+                                "Miss",
+                                "False",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "SetNumberVariable"
+                              },
+                              "parameters": [
+                                "Beat.Index",
+                                "=",
+                                "0"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ResetTimer"
+                              },
+                              "parameters": [
+                                "",
+                                "\"Beat\""
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    }
+  ],
+  "layers": [
+    {
+      "ambientLightColorB": 32,
+      "ambientLightColorG": 0,
+      "ambientLightColorR": 0,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 0.1,
+      "cameraType": "perspective",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "",
+      "renderingType": "2d",
+      "visibility": true,
+      "cameras": [
+        {
+          "defaultSize": true,
+          "defaultViewport": true,
+          "height": 0,
+          "viewportBottom": 1,
+          "viewportLeft": 0,
+          "viewportRight": 1,
+          "viewportTop": 0,
+          "width": 0
+        }
+      ],
+      "effects": []
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "Level2",
+      "renderingType": "2d",
+      "visibility": true,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Light",
+          "doubleParameters": {
+            "elevation": 45,
+            "intensity": 1,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "groundColor": "64;64;64",
+            "skyColor": "255;255;255",
+            "top": "Y-"
+          },
+          "booleanParameters": {}
+        }
+      ]
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "Characters",
+      "renderingType": "2d",
+      "visibility": true,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Light",
+          "doubleParameters": {
+            "elevation": 45,
+            "intensity": 1,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "groundColor": "64;64;64",
+            "skyColor": "255;255;255",
+            "top": "Y-"
+          },
+          "booleanParameters": {}
+        }
+      ]
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "Notes",
+      "renderingType": "2d",
+      "visibility": true,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Light",
+          "doubleParameters": {
+            "elevation": 45,
+            "intensity": 1,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "groundColor": "64;64;64",
+            "skyColor": "255;255;255",
+            "top": "Y-"
+          },
+          "booleanParameters": {}
+        }
+      ]
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "Dialogue",
+      "renderingType": "2d",
+      "visibility": true,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Light",
+          "doubleParameters": {
+            "elevation": 45,
+            "intensity": 1,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "groundColor": "64;64;64",
+            "skyColor": "255;255;255",
+            "top": "Y-"
+          },
+          "booleanParameters": {}
+        }
+      ]
+    }
+  ],
+  "behaviorsSharedData": [
+    {
+      "name": "Animation",
+      "type": "AnimatableCapability::AnimatableBehavior"
+    },
+    {
+      "name": "DialogBoxBackGround",
+      "type": "DialogBox::DialogBoxBackGround"
+    },
+    {
+      "name": "Effect",
+      "type": "EffectCapability::EffectBehavior"
+    },
+    {
+      "name": "Flippable",
+      "type": "FlippableCapability::FlippableBehavior"
+    },
+    {
+      "name": "Opacity",
+      "type": "OpacityCapability::OpacityBehavior"
+    },
+    {
+      "name": "Resizable",
+      "type": "ResizableCapability::ResizableBehavior"
+    },
+    {
+      "name": "Scale",
+      "type": "ScalableCapability::ScalableBehavior"
+    },
+    {
+      "name": "ShakeObject_PositionAngle",
+      "type": "ShakeObject::ShakeObject_PositionAngle"
+    },
+    {
+      "name": "Text",
+      "type": "TextContainerCapability::TextContainerBehavior"
+    },
+    {
+      "name": "Tween",
+      "type": "Tween::TweenBehavior"
+    }
+  ]
+}

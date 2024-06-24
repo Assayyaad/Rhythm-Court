@@ -30,39 +30,39 @@
     "minFPS": 30,
     "verticalSync": false,
     "platformSpecificAssets": {
-      "android-icon-144": "img\\android-icon-144.png",
-      "android-icon-192": "img\\android-icon-192.png",
-      "android-icon-36": "img\\android-icon-36.png",
-      "android-icon-48": "img\\android-icon-48.png",
-      "android-icon-72": "img\\android-icon-72.png",
-      "android-icon-96": "img\\android-icon-96.png",
-      "android-windowSplashScreenAnimatedIcon": "img\\android-windowSplashScreenAnimatedIcon.png",
-      "desktop-icon-512": "img\\desktop-icon-512.png",
-      "ios-icon-100": "img\\ios-icon-100.png",
-      "ios-icon-1024": "img\\ios-icon-1024.png",
-      "ios-icon-114": "img\\ios-icon-114.png",
-      "ios-icon-120": "img\\ios-icon-120.png",
-      "ios-icon-144": "img\\ios-icon-144.png",
-      "ios-icon-152": "img\\ios-icon-152.png",
-      "ios-icon-167": "img\\ios-icon-167.png",
-      "ios-icon-180": "img\\ios-icon-180.png",
-      "ios-icon-20": "img\\ios-icon-20.png",
-      "ios-icon-29": "img\\ios-icon-29.png",
-      "ios-icon-40": "img\\ios-icon-40.png",
-      "ios-icon-50": "img\\ios-icon-50.png",
-      "ios-icon-57": "img\\ios-icon-57.png",
-      "ios-icon-58": "img\\ios-icon-58.png",
-      "ios-icon-60": "img\\ios-icon-60.png",
-      "ios-icon-72": "img\\ios-icon-72.png",
-      "ios-icon-76": "img\\ios-icon-76.png",
-      "ios-icon-80": "img\\ios-icon-80.png",
-      "ios-icon-87": "img\\ios-icon-87.png",
-      "liluo-thumbnail": "assets\\الشعار.jpg"
+      "android-icon-144": "assets\\logo\\android-icon-144.png",
+      "android-icon-192": "assets\\logo\\android-icon-192.png",
+      "android-icon-36": "assets\\logo\\android-icon-36.png",
+      "android-icon-48": "assets\\logo\\android-icon-48.png",
+      "android-icon-72": "assets\\logo\\android-icon-72.png",
+      "android-icon-96": "assets\\logo\\android-icon-96.png",
+      "android-windowSplashScreenAnimatedIcon": "assets\\logo\\android-windowSplashScreenAnimatedIcon.png",
+      "desktop-icon-512": "assets\\logo\\desktop-icon-512.png",
+      "ios-icon-100": "assets\\logo\\ios-icon-100.png",
+      "ios-icon-1024": "assets\\logo\\ios-icon-1024.png",
+      "ios-icon-114": "assets\\logo\\ios-icon-114.png",
+      "ios-icon-120": "assets\\logo\\ios-icon-120.png",
+      "ios-icon-144": "assets\\logo\\ios-icon-144.png",
+      "ios-icon-152": "assets\\logo\\ios-icon-152.png",
+      "ios-icon-167": "assets\\logo\\ios-icon-167.png",
+      "ios-icon-180": "assets\\logo\\ios-icon-180.png",
+      "ios-icon-20": "assets\\logo\\ios-icon-20.png",
+      "ios-icon-29": "assets\\logo\\ios-icon-29.png",
+      "ios-icon-40": "assets\\logo\\ios-icon-40.png",
+      "ios-icon-50": "assets\\logo\\ios-icon-50.png",
+      "ios-icon-57": "assets\\logo\\ios-icon-57.png",
+      "ios-icon-58": "assets\\logo\\ios-icon-58.png",
+      "ios-icon-60": "assets\\logo\\ios-icon-60.png",
+      "ios-icon-72": "assets\\logo\\ios-icon-72.png",
+      "ios-icon-76": "assets\\logo\\ios-icon-76.png",
+      "ios-icon-80": "assets\\logo\\ios-icon-80.png",
+      "ios-icon-87": "assets\\logo\\ios-icon-87.png",
+      "liluo-thumbnail": "Logo"
     },
     "loadingScreen": {
       "backgroundColor": 4868682,
       "backgroundFadeInDuration": 0.2,
-      "backgroundImageResourceName": "assets\\الشعار.jpg",
+      "backgroundImageResourceName": "Logo",
       "gdevelopLogoStyle": "dark-colored",
       "logoAndProgressFadeInDuration": 0.2,
       "logoAndProgressLogoFadeInDelay": 0,
@@ -129,10 +129,10 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/الشعار.jpg",
+        "file": "assets/logo.jpeg",
         "kind": "image",
         "metadata": "",
-        "name": "assets\\الشعار.jpg",
+        "name": "Logo",
         "smoothed": true,
         "userAdded": true
       },
@@ -160,7 +160,7 @@
         "kind": "image",
         "metadata": "",
         "name": "Phoenix",
-        "smoothed": false,
+        "smoothed": true,
         "userAdded": true
       },
       {
@@ -169,7 +169,7 @@
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "Apollo",
-        "smoothed": false,
+        "smoothed": true,
         "userAdded": true
       },
       {
@@ -178,7 +178,7 @@
         "kind": "image",
         "metadata": "",
         "name": "Edgeworth",
-        "smoothed": false,
+        "smoothed": true,
         "userAdded": false
       },
       {
@@ -336,6 +336,299 @@
         "kind": "font",
         "metadata": "",
         "name": "LinLibertine_RB",
+        "userAdded": true
+      },
+      {
+        "file": "assets/Roboto-Regular2.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "Roboto-Regular.ttf",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/e96b43b0ca3fd7775d75a702f44cd1b0dfd325e1db317f7cba84efdf572571fe_Roboto-Regular.ttf",
+          "name": "Roboto-Regular.ttf"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Blue Button_Hovered.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Blue Button_Hovered.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/1ffd07cb739df2a909155dd3057f6def46b833ced6ef1a09527b6ea59e88e464_Blue Button_Hovered.png",
+          "name": "Blue Button_Hovered.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Blue Button_Idle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Blue Button_Idle.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/eeac55458b66fb84f756b38085fbf7d1e079c39363c942abd35ea9d0939465ce_Blue Button_Idle.png",
+          "name": "Blue Button_Idle.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Blue Button_Pressed.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Blue Button_Pressed.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/f0ede8843d544f6e84bc09299a8aabffbce558966f25af98f7b47ab1648217ce_Blue Button_Pressed.png",
+          "name": "Blue Button_Pressed.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/logo/desktop-icon-512.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\logo\\desktop-icon-512.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/logo/android-windowSplashScreenAnimatedIcon.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\logo\\android-windowSplashScreenAnimatedIcon.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/logo/android-icon-192.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\logo\\android-icon-192.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/logo/android-icon-144.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\logo\\android-icon-144.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/logo/android-icon-96.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\logo\\android-icon-96.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/logo/android-icon-72.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\logo\\android-icon-72.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/logo/android-icon-48.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\logo\\android-icon-48.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/logo/android-icon-36.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\logo\\android-icon-36.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/logo/ios-icon-1024.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\logo\\ios-icon-1024.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/logo/ios-icon-180.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\logo\\ios-icon-180.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/logo/ios-icon-167.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\logo\\ios-icon-167.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/logo/ios-icon-152.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\logo\\ios-icon-152.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/logo/ios-icon-144.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\logo\\ios-icon-144.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/logo/ios-icon-120.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\logo\\ios-icon-120.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/logo/ios-icon-114.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\logo\\ios-icon-114.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/logo/ios-icon-100.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\logo\\ios-icon-100.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/logo/ios-icon-87.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\logo\\ios-icon-87.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/logo/ios-icon-80.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\logo\\ios-icon-80.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/logo/ios-icon-76.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\logo\\ios-icon-76.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/logo/ios-icon-72.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\logo\\ios-icon-72.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/logo/ios-icon-60.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\logo\\ios-icon-60.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/logo/ios-icon-58.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\logo\\ios-icon-58.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/logo/ios-icon-57.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\logo\\ios-icon-57.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/logo/ios-icon-50.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\logo\\ios-icon-50.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/logo/ios-icon-40.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\logo\\ios-icon-40.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/logo/ios-icon-29.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\logo\\ios-icon-29.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/logo/ios-icon-20.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\logo\\ios-icon-20.png",
+        "smoothed": true,
         "userAdded": true
       }
     ],
@@ -1231,15 +1524,19 @@
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/game"
+      "referenceTo": "/layouts/level1"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/game2"
+      "referenceTo": "/layouts/level2"
     }
   ],
   "externalEvents": [],
   "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/panelspritebutton"
+    },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/dialogbox"

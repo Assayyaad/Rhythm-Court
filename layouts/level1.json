@@ -1,8 +1,8 @@
 {
   "b": 252,
   "disableInputWhenNotFocused": true,
-  "mangledName": "Game",
-  "name": "Game",
+  "mangledName": "Level1",
+  "name": "Level1",
   "r": 165,
   "standardSortMethod": true,
   "stopSoundsOnStartup": true,
@@ -510,7 +510,7 @@
       "persistentUuid": "944bd579-184f-4d86-929f-d9388b666803",
       "width": 1070,
       "x": 430,
-      "y": 798,
+      "y": 800,
       "zOrder": 20,
       "numberProperties": [],
       "stringProperties": [],
@@ -527,7 +527,7 @@
       "persistentUuid": "179de455-92c6-4b22-bd33-2cb1fb8b37b6",
       "width": 134,
       "x": 485,
-      "y": 852,
+      "y": 850,
       "zOrder": 34,
       "numberProperties": [],
       "stringProperties": [],
@@ -544,7 +544,7 @@
       "persistentUuid": "8e15d608-1587-402a-adeb-6d59f3c354c8",
       "width": 64,
       "x": 1370,
-      "y": 928,
+      "y": 930,
       "zOrder": 35,
       "numberProperties": [],
       "stringProperties": [],
@@ -560,7 +560,7 @@
       "persistentUuid": "bb7b2e42-5c67-4a53-82d4-516f63cdab9d",
       "width": 750,
       "x": 640,
-      "y": 838,
+      "y": 840,
       "zOrder": 30,
       "numberProperties": [],
       "stringProperties": [],
@@ -576,7 +576,7 @@
       "persistentUuid": "d795e014-ee7e-4064-bbde-96cec31435bd",
       "width": 750,
       "x": 640,
-      "y": 878,
+      "y": 880,
       "zOrder": 30,
       "numberProperties": [],
       "stringProperties": [],
@@ -595,7 +595,7 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "Apollo_and_Document_2",
+          "name": "",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -670,6 +670,23 @@
     {
       "disabled": true,
       "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "SetWindowSize"
+          },
+          "parameters": [
+            "",
+            "960",
+            "540",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
           "type": {
@@ -688,33 +705,6 @@
           "parameters": [
             "",
             "yes",
-            ""
-          ]
-        }
-      ]
-    },
-    {
-      "folded": true,
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "DepartScene"
-          },
-          "parameters": [
-            ""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "SetWindowSize"
-          },
-          "parameters": [
-            "",
-            "960",
-            "540",
             ""
           ]
         }
@@ -838,6 +828,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Logic Loop",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -1537,6 +1528,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Controls",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -2019,7 +2011,7 @@
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
       "isLocked": false,
-      "name": "Game",
+      "name": "Level1",
       "renderingType": "2d",
       "visibility": true,
       "cameras": [],

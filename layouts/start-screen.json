@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.2987985363606903,
+    "zoomFactor": 0.37687720367508776,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -27,32 +27,15 @@
     {
       "angle": 0,
       "customSize": true,
-      "depth": 1,
-      "height": 681,
-      "keepRatio": true,
-      "layer": "",
-      "name": "NewSprite",
-      "persistentUuid": "c2431207-1c37-4c10-9f80-592710ac8a97",
-      "width": 1082,
-      "x": 889,
-      "y": 86,
-      "zOrder": 1,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
       "depth": 0,
       "height": 811.5,
       "keepRatio": true,
       "layer": "",
-      "name": "Rival",
+      "name": "Opponent",
       "persistentUuid": "7285e5ff-2258-4177-8994-259e486e3e7d",
       "width": 1082,
-      "x": -132,
-      "y": 22,
+      "x": -104,
+      "y": -32,
       "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
@@ -62,25 +45,88 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 530,
+      "height": 316,
       "keepRatio": true,
       "layer": "",
       "name": "Title",
       "persistentUuid": "d294bc3c-68f5-45d3-83c9-9cc7952498a5",
-      "width": 2212,
-      "x": 18,
-      "y": 659,
+      "width": 1677,
+      "x": 150,
+      "y": 552,
       "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 750,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Player",
+      "persistentUuid": "5c62bc60-34cf-4931-a4d7-1379fab3a9ef",
+      "width": 1000,
+      "x": 902,
+      "y": 19,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 48,
+      "height": 106,
+      "layer": "",
+      "name": "Button",
+      "persistentUuid": "b5ed3b2c-1866-4977-9ec7-f62d87ec3a0b",
+      "width": 512,
+      "x": 724,
+      "y": 813,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "folded": true,
+          "name": "value",
+          "type": "string",
+          "value": "Play"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 48,
+      "height": 106,
+      "layer": "",
+      "name": "Button",
+      "persistentUuid": "0dd986be-757d-4796-97c7-16e0f794dcbe",
+      "width": 512,
+      "x": 725,
+      "y": 931,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "folded": true,
+          "name": "value",
+          "type": "string",
+          "value": "Quit"
+        }
+      ]
     }
   ],
   "objects": [
     {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
-      "name": "NewSprite",
+      "name": "Opponent",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
@@ -97,67 +143,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\Phoenix-normal29.webp",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 0,
-                        "y": 18
-                      },
-                      {
-                        "x": 125,
-                        "y": 18
-                      },
-                      {
-                        "x": 125,
-                        "y": 160
-                      },
-                      {
-                        "x": 0,
-                        "y": 160
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "Rival",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\Edgeworth-normal29.webp",
+                  "image": "Edgeworth",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -210,7 +196,7 @@
       "behaviors": [],
       "string": "Rhythm Court",
       "font": "LinLibertine_RB",
-      "textAlignment": "left",
+      "textAlignment": "center",
       "characterSize": 250,
       "color": {
         "b": 214,
@@ -233,9 +219,99 @@
         "underlined": false,
         "text": "Rhythm Court",
         "font": "LinLibertine_RB",
-        "textAlignment": "left",
+        "textAlignment": "center",
         "characterSize": 250,
         "color": "28;130;214"
+      }
+    },
+    {
+      "assetStoreId": "90d94b6e3a23c34948e59eaaef4679740f8ab588696d59b21e0c0c2ef106b94d",
+      "name": "Button",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variables": [
+        {
+          "folded": true,
+          "name": "value",
+          "type": "string",
+          "value": "Button"
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "LeftPadding": 16,
+        "RightPadding": 16,
+        "PressedLabelOffsetY": 10,
+        "BottomPadding": 32,
+        "TopPadding": 16,
+        "HoveredFadeOutDuration": 0.25
+      },
+      "childrenContent": {
+        "Hovered": {
+          "bottomMargin": 32,
+          "height": 106,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "Blue Button_Hovered.png",
+          "tiled": true,
+          "topMargin": 16,
+          "width": 256
+        },
+        "Idle": {
+          "bottomMargin": 32,
+          "height": 106,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "Blue Button_Idle.png",
+          "tiled": true,
+          "topMargin": 16,
+          "width": 256
+        },
+        "Label": {
+          "bold": false,
+          "italic": false,
+          "smoothed": true,
+          "underlined": false,
+          "string": "Button",
+          "font": "",
+          "textAlignment": "center",
+          "characterSize": 60,
+          "color": {
+            "b": 99,
+            "g": 69,
+            "r": 28
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Button",
+            "font": "",
+            "textAlignment": "center",
+            "characterSize": 60,
+            "color": "28;69;99"
+          }
+        },
+        "Pressed": {
+          "bottomMargin": 16,
+          "height": 106,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "Blue Button_Pressed.png",
+          "tiled": true,
+          "topMargin": 32,
+          "width": 256
+        }
       }
     }
   ],
@@ -243,37 +319,154 @@
     "folderName": "__ROOT",
     "children": [
       {
-        "objectName": "NewSprite"
-      },
-      {
-        "objectName": "Rival"
+        "objectName": "Opponent"
       },
       {
         "objectName": "Title"
+      },
+      {
+        "objectName": "Button"
       }
     ]
   },
   "events": [
     {
       "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": [
+      "conditions": [
         {
           "type": {
-            "value": "ChangeColor"
+            "value": "DepartScene"
           },
           "parameters": [
-            "NewSprite",
-            "\"0;0;0\""
+            ""
+          ]
+        }
+      ],
+      "actions": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "ChangeColor"
+              },
+              "parameters": [
+                "Player",
+                "\"0;0;0\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeColor"
+              },
+              "parameters": [
+                "Opponent",
+                "\"0;0;0\""
+              ]
+            }
           ]
         },
         {
-          "type": {
-            "value": "ChangeColor"
-          },
-          "parameters": [
-            "Rival",
-            "\"0;0;0\""
+          "type": "BuiltinCommonInstructions::ForEach",
+          "object": "Button",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::SetLabelText"
+              },
+              "parameters": [
+                "Button",
+                "Button.value",
+                ""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+                  },
+                  "parameters": [
+                    "Button",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Game\"",
+                    ""
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "StringObjectVariable"
+                      },
+                      "parameters": [
+                        "Button",
+                        "value",
+                        "=",
+                        "\"Play\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Scene"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Game\"",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "StringObjectVariable"
+                      },
+                      "parameters": [
+                        "Button",
+                        "value",
+                        "=",
+                        "\"Quit\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Quit"
+                      },
+                      "parameters": [
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
           ]
         }
       ]
@@ -292,7 +485,7 @@
       "isLightingLayer": false,
       "isLocked": false,
       "name": "",
-      "renderingType": "",
+      "renderingType": "2d",
       "visibility": true,
       "cameras": [
         {
@@ -353,10 +546,6 @@
     {
       "name": "Scale",
       "type": "ScalableCapability::ScalableBehavior"
-    },
-    {
-      "name": "ShakeObject_PositionAngle",
-      "type": "ShakeObject::ShakeObject_PositionAngle"
     },
     {
       "name": "Text",
