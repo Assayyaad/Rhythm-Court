@@ -1528,7 +1528,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Controls",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -1775,7 +1774,7 @@
                               },
                               "parameters": [
                                 "",
-                                "\"Game2\"",
+                                "\"Level2\"",
                                 ""
                               ]
                             }
