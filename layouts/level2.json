@@ -45,6 +45,7 @@
       "value": "Start"
     },
     {
+      "folded": true,
       "name": "Beat",
       "type": "structure",
       "children": [
@@ -183,19 +184,17 @@
           "type": "structure",
           "children": [
             {
-              "folded": true,
               "name": "Dialogues",
               "type": "array",
               "children": [
                 {
-                  "folded": true,
                   "type": "structure",
                   "children": [
                     {
                       "folded": true,
                       "name": "Name",
                       "type": "string",
-                      "value": "Phoenix"
+                      "value": "Judge"
                     },
                     {
                       "folded": true,
@@ -206,13 +205,12 @@
                   ]
                 },
                 {
-                  "folded": true,
                   "type": "structure",
                   "children": [
                     {
                       "name": "Name",
                       "type": "string",
-                      "value": "Phoenix"
+                      "value": "Judge"
                     },
                     {
                       "name": "Value",
@@ -222,13 +220,12 @@
                   ]
                 },
                 {
-                  "folded": true,
                   "type": "structure",
                   "children": [
                     {
                       "name": "Name",
                       "type": "string",
-                      "value": "Phoenix"
+                      "value": "Judge"
                     },
                     {
                       "folded": true,
@@ -239,13 +236,12 @@
                   ]
                 },
                 {
-                  "folded": true,
                   "type": "structure",
                   "children": [
                     {
                       "name": "Name",
                       "type": "string",
-                      "value": "Phoenix"
+                      "value": "Judge"
                     },
                     {
                       "folded": true,
@@ -271,18 +267,16 @@
           "type": "structure",
           "children": [
             {
-              "folded": true,
               "name": "Dialogues",
               "type": "array",
               "children": [
                 {
-                  "folded": true,
                   "type": "structure",
                   "children": [
                     {
                       "name": "Name",
                       "type": "string",
-                      "value": "Phoenix"
+                      "value": "Judge"
                     },
                     {
                       "folded": true,
@@ -293,13 +287,12 @@
                   ]
                 },
                 {
-                  "folded": true,
                   "type": "structure",
                   "children": [
                     {
                       "name": "Name",
                       "type": "string",
-                      "value": "Phoenix"
+                      "value": "Judge"
                     },
                     {
                       "folded": true,
@@ -320,24 +313,21 @@
           ]
         },
         {
-          "folded": true,
           "name": "Start",
           "type": "structure",
           "children": [
             {
-              "folded": true,
               "name": "Dialogues",
               "type": "array",
               "children": [
                 {
-                  "folded": true,
                   "type": "structure",
                   "children": [
                     {
                       "folded": true,
                       "name": "Name",
                       "type": "string",
-                      "value": "Phoenix"
+                      "value": "Judge"
                     },
                     {
                       "folded": true,
@@ -348,14 +338,13 @@
                   ]
                 },
                 {
-                  "folded": true,
                   "type": "structure",
                   "children": [
                     {
                       "folded": true,
                       "name": "Name",
                       "type": "string",
-                      "value": "Phoenix"
+                      "value": "Judge"
                     },
                     {
                       "folded": true,
@@ -366,14 +355,13 @@
                   ]
                 },
                 {
-                  "folded": true,
                   "type": "structure",
                   "children": [
                     {
                       "folded": true,
                       "name": "Name",
                       "type": "string",
-                      "value": "Phoenix"
+                      "value": "Judge"
                     },
                     {
                       "folded": true,
@@ -384,14 +372,13 @@
                   ]
                 },
                 {
-                  "folded": true,
                   "type": "structure",
                   "children": [
                     {
                       "folded": true,
                       "name": "Name",
                       "type": "string",
-                      "value": "Phoenix"
+                      "value": "Judge"
                     },
                     {
                       "folded": true,
@@ -402,14 +389,13 @@
                   ]
                 },
                 {
-                  "folded": true,
                   "type": "structure",
                   "children": [
                     {
                       "folded": true,
                       "name": "Name",
                       "type": "string",
-                      "value": "Phoenix"
+                      "value": "Judge"
                     },
                     {
                       "folded": true,
@@ -420,14 +406,13 @@
                   ]
                 },
                 {
-                  "folded": true,
                   "type": "structure",
                   "children": [
                     {
                       "folded": true,
                       "name": "Name",
                       "type": "string",
-                      "value": "Phoenix"
+                      "value": "Judge"
                     },
                     {
                       "name": "Value",
@@ -447,7 +432,6 @@
           ]
         },
         {
-          "folded": true,
           "name": "Win",
           "type": "structure",
           "children": [
@@ -457,13 +441,12 @@
               "type": "array",
               "children": [
                 {
-                  "folded": true,
                   "type": "structure",
                   "children": [
                     {
                       "name": "Name",
                       "type": "string",
-                      "value": "Phoenix"
+                      "value": "Judge"
                     },
                     {
                       "folded": true,
@@ -474,13 +457,12 @@
                   ]
                 },
                 {
-                  "folded": true,
                   "type": "structure",
                   "children": [
                     {
                       "name": "Name",
                       "type": "string",
-                      "value": "Phoenix"
+                      "value": "Judge"
                     },
                     {
                       "folded": true,
@@ -491,13 +473,12 @@
                   ]
                 },
                 {
-                  "folded": true,
                   "type": "structure",
                   "children": [
                     {
                       "name": "Name",
                       "type": "string",
-                      "value": "Phoenix"
+                      "value": "Judge"
                     },
                     {
                       "folded": true,
@@ -508,13 +489,12 @@
                   ]
                 },
                 {
-                  "folded": true,
                   "type": "structure",
                   "children": [
                     {
                       "name": "Name",
                       "type": "string",
-                      "value": "Phoenix"
+                      "value": "Judge"
                     },
                     {
                       "folded": true,
@@ -710,7 +690,7 @@
       "height": 64,
       "keepRatio": true,
       "layer": "Dialogue",
-      "name": "DialogueIcon",
+      "name": "DialogueButton",
       "persistentUuid": "62576139-9886-411e-aa31-97b4c4cbe5da",
       "width": 64,
       "x": 1370,
@@ -880,7 +860,7 @@
                 "DialogueName",
                 "DialogueCharacter",
                 "DialogueText",
-                "DialogueIcon",
+                "DialogueButton",
                 ""
               ]
             },
@@ -1653,11 +1633,13 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Controls",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -1679,6 +1661,7 @@
           "actions": [],
           "events": [
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -1722,6 +1705,7 @@
                   ]
                 },
                 {
+                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -1778,6 +1762,7 @@
                       ]
                     },
                     {
+                      "folded": true,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
@@ -1939,6 +1924,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -1955,6 +1941,7 @@
               "actions": [],
               "events": [
                 {
+                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -1993,6 +1980,7 @@
                   ],
                   "events": [
                     {
+                      "folded": true,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {

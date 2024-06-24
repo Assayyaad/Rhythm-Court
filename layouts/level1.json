@@ -32,7 +32,7 @@
           "name": "DialogueCharacter"
         },
         {
-          "name": "DialogueIcon"
+          "name": "DialogueButton"
         },
         {
           "name": "DialogueName"
@@ -77,6 +77,7 @@
       "value": "Start"
     },
     {
+      "folded": true,
       "name": "Beat",
       "type": "structure",
       "children": [
@@ -185,24 +186,21 @@
           "value": 0
         },
         {
-          "folded": true,
           "name": "Lose",
           "type": "structure",
           "children": [
             {
-              "folded": true,
               "name": "Dialogues",
               "type": "array",
               "children": [
                 {
-                  "folded": true,
                   "type": "structure",
                   "children": [
                     {
                       "folded": true,
                       "name": "Name",
                       "type": "string",
-                      "value": "Phoenix"
+                      "value": "Apollo"
                     },
                     {
                       "folded": true,
@@ -213,13 +211,12 @@
                   ]
                 },
                 {
-                  "folded": true,
                   "type": "structure",
                   "children": [
                     {
                       "name": "Name",
                       "type": "string",
-                      "value": "Phoenix"
+                      "value": "Apollo"
                     },
                     {
                       "name": "Value",
@@ -229,13 +226,12 @@
                   ]
                 },
                 {
-                  "folded": true,
                   "type": "structure",
                   "children": [
                     {
                       "name": "Name",
                       "type": "string",
-                      "value": "Phoenix"
+                      "value": "Apollo"
                     },
                     {
                       "folded": true,
@@ -261,18 +257,16 @@
           "type": "structure",
           "children": [
             {
-              "folded": true,
               "name": "Dialogues",
               "type": "array",
               "children": [
                 {
-                  "folded": true,
                   "type": "structure",
                   "children": [
                     {
                       "name": "Name",
                       "type": "string",
-                      "value": "Phoenix"
+                      "value": "Eddie"
                     },
                     {
                       "folded": true,
@@ -298,19 +292,17 @@
           "type": "structure",
           "children": [
             {
-              "folded": true,
               "name": "Dialogues",
               "type": "array",
               "children": [
                 {
-                  "folded": true,
                   "type": "structure",
                   "children": [
                     {
                       "folded": true,
                       "name": "Name",
                       "type": "string",
-                      "value": "Phoenix"
+                      "value": "Eddie"
                     },
                     {
                       "folded": true,
@@ -321,14 +313,13 @@
                   ]
                 },
                 {
-                  "folded": true,
                   "type": "structure",
                   "children": [
                     {
                       "folded": true,
                       "name": "Name",
                       "type": "string",
-                      "value": "Phoenix"
+                      "value": "Eddie"
                     },
                     {
                       "folded": true,
@@ -339,14 +330,13 @@
                   ]
                 },
                 {
-                  "folded": true,
                   "type": "structure",
                   "children": [
                     {
                       "folded": true,
                       "name": "Name",
                       "type": "string",
-                      "value": "Phoenix"
+                      "value": "Eddie"
                     },
                     {
                       "name": "Value",
@@ -356,13 +346,12 @@
                   ]
                 },
                 {
-                  "folded": true,
                   "type": "structure",
                   "children": [
                     {
                       "name": "Name",
                       "type": "string",
-                      "value": "Phoenix"
+                      "value": "Eddie"
                     },
                     {
                       "name": "Value",
@@ -382,6 +371,7 @@
           ]
         },
         {
+          "folded": true,
           "name": "Win",
           "type": "structure",
           "children": [
@@ -395,13 +385,13 @@
                     {
                       "name": "Name",
                       "type": "string",
-                      "value": "Phoenix"
+                      "value": "Eddie"
                     },
                     {
                       "folded": true,
                       "name": "Value",
                       "type": "string",
-                      "value": "Thanks for clarifying Mr. Jayoma. We trust that the jury will do you justice."
+                      "value": "Thanks for clarifying Mr. Jayoma. I'm sure the court will do me justice."
                     }
                   ]
                 }
@@ -571,7 +561,7 @@
       "height": 64,
       "keepRatio": true,
       "layer": "Dialogue",
-      "name": "DialogueIcon",
+      "name": "DialogueButton",
       "persistentUuid": "8e15d608-1587-402a-adeb-6d59f3c354c8",
       "width": 64,
       "x": 1370,
@@ -756,7 +746,7 @@
                 "DialogueName",
                 "DialogueCharacter",
                 "DialogueText",
-                "DialogueIcon",
+                "DialogueButton",
                 ""
               ]
             },
@@ -1529,11 +1519,13 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Controls",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -1555,6 +1547,7 @@
           "actions": [],
           "events": [
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -1598,6 +1591,7 @@
                   ]
                 },
                 {
+                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -1654,6 +1648,7 @@
                       ]
                     },
                     {
+                      "folded": true,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
@@ -1815,6 +1810,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -1831,6 +1827,7 @@
               "actions": [],
               "events": [
                 {
+                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -1869,6 +1866,7 @@
                   ],
                   "events": [
                     {
+                      "folded": true,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {

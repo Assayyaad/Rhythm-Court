@@ -156,7 +156,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Phoenix-normal29.webp",
+        "file": "assets/characters/Phoenix.webp",
         "kind": "image",
         "metadata": "",
         "name": "Phoenix",
@@ -165,7 +165,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Apollo_and_Document_2.png",
+        "file": "assets/characters/Apollo.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "Apollo",
@@ -174,7 +174,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Edgeworth-normal29.webp",
+        "file": "assets/characters/Edgeworth.webp",
         "kind": "image",
         "metadata": "",
         "name": "Edgeworth",
@@ -268,28 +268,46 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Icon-Phoenix.webp",
+        "file": "assets/icons/Phoenix.webp",
         "kind": "image",
         "metadata": "",
-        "name": "assets\\Icon-Phoenix.webp",
+        "name": "PhoenixIcon",
         "smoothed": true,
         "userAdded": false
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Icon-Edgeworth.webp",
+        "file": "assets/icons/Apollo.png",
         "kind": "image",
         "metadata": "",
-        "name": "assets\\Icon-Edgeworth.webp",
+        "name": "ApolloIcon",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/icons/Edgeworth.webp",
+        "kind": "image",
+        "metadata": "",
+        "name": "EdgeworthIcon",
         "smoothed": true,
         "userAdded": false
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Icon-Apollo.png",
+        "file": "assets/icons/Eddie.webp",
         "kind": "image",
         "metadata": "",
-        "name": "assets\\Icon-Apollo.png",
+        "name": "EddieIcon",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/icons/Judge.webp",
+        "kind": "image",
+        "metadata": "",
+        "name": "JudgeIcon",
         "smoothed": true,
         "userAdded": true
       },
@@ -1228,7 +1246,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\Icon-Phoenix.webp",
+                  "image": "PhoenixIcon",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1276,7 +1294,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\Icon-Edgeworth.webp",
+                  "image": "EdgeworthIcon",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1324,7 +1342,103 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\Icon-Apollo.png",
+                  "image": "ApolloIcon",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 1
+                      },
+                      {
+                        "x": 57,
+                        "y": 1
+                      },
+                      {
+                        "x": 57,
+                        "y": 58
+                      },
+                      {
+                        "x": 0,
+                        "y": 58
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Eddie",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "EddieIcon",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 1
+                      },
+                      {
+                        "x": 57,
+                        "y": 1
+                      },
+                      {
+                        "x": 57,
+                        "y": 58
+                      },
+                      {
+                        "x": 0,
+                        "y": 58
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Judge",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "JudgeIcon",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1367,7 +1481,7 @@
     {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
-      "name": "DialogueIcon",
+      "name": "DialogueButton",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
@@ -1492,7 +1606,7 @@
         "objectName": "DialogueCharacter"
       },
       {
-        "objectName": "DialogueIcon"
+        "objectName": "DialogueButton"
       },
       {
         "objectName": "DialogueName"
