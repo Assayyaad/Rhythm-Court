@@ -52,7 +52,7 @@
         {
           "name": "Damage",
           "type": "number",
-          "value": 1
+          "value": 0.5
         },
         {
           "folded": true,
@@ -142,7 +142,7 @@
                       "folded": true,
                       "name": "Value",
                       "type": "string",
-                      "value": "Thank for joining us Mr. Jayoma."
+                      "value": "Thank you for your representation, Mr. Jayoma."
                     }
                   ]
                 },
@@ -158,7 +158,7 @@
                     {
                       "name": "Value",
                       "type": "string",
-                      "value": "While we understand that you are only doing your job."
+                      "value": "The jury has reached a verdict."
                     }
                   ]
                 },
@@ -175,7 +175,24 @@
                       "folded": true,
                       "name": "Value",
                       "type": "string",
-                      "value": "At the end there is no place to sex offenders between us."
+                      "value": "They find the defendant guilty as charged."
+                    }
+                  ]
+                },
+                {
+                  "folded": true,
+                  "type": "structure",
+                  "children": [
+                    {
+                      "name": "Name",
+                      "type": "string",
+                      "value": "Phoenix"
+                    },
+                    {
+                      "folded": true,
+                      "name": "Value",
+                      "type": "string",
+                      "value": "While we understand your efforts in this case, the court upholds the principle that there is no place for sexual offenders in our society."
                     }
                   ]
                 }
@@ -185,7 +202,7 @@
               "folded": true,
               "name": "Length",
               "type": "number",
-              "value": 3
+              "value": 4
             }
           ]
         },
@@ -212,7 +229,24 @@
                       "folded": true,
                       "name": "Value",
                       "type": "string",
-                      "value": "Mr Jayoma please do everything you can to save my reputation sir."
+                      "value": "Mr. Jayoma, during your cross-examination, you questioned the lack of concrete evidence presented against your client."
+                    }
+                  ]
+                },
+                {
+                  "folded": true,
+                  "type": "structure",
+                  "children": [
+                    {
+                      "name": "Name",
+                      "type": "string",
+                      "value": "Phoenix"
+                    },
+                    {
+                      "folded": true,
+                      "name": "Value",
+                      "type": "string",
+                      "value": "Do you wish to elaborate on this point for the court?"
                     }
                   ]
                 }
@@ -222,7 +256,7 @@
               "folded": true,
               "name": "Length",
               "type": "number",
-              "value": 1
+              "value": 2
             }
           ]
         },
@@ -250,7 +284,7 @@
                       "folded": true,
                       "name": "Value",
                       "type": "string",
-                      "value": "Mr. Jayoma uhhh thanks for having me here."
+                      "value": "All rise."
                     }
                   ]
                 },
@@ -268,7 +302,61 @@
                       "folded": true,
                       "name": "Value",
                       "type": "string",
-                      "value": "Look man I'm going to be honest this case is causing me a lot of issues and I'm about to lose my job because of it."
+                      "value": "This court is now in session, the Honorable Judge Cristofer, presiding."
+                    }
+                  ]
+                },
+                {
+                  "folded": true,
+                  "type": "structure",
+                  "children": [
+                    {
+                      "folded": true,
+                      "name": "Name",
+                      "type": "string",
+                      "value": "Phoenix"
+                    },
+                    {
+                      "folded": true,
+                      "name": "Value",
+                      "type": "string",
+                      "value": "Counselors, please be seated."
+                    }
+                  ]
+                },
+                {
+                  "folded": true,
+                  "type": "structure",
+                  "children": [
+                    {
+                      "folded": true,
+                      "name": "Name",
+                      "type": "string",
+                      "value": "Phoenix"
+                    },
+                    {
+                      "folded": true,
+                      "name": "Value",
+                      "type": "string",
+                      "value": "Mr. Jayoma and Mike, you are here before this court to present your cases regarding the serious allegations of sexual harassment against the defendant."
+                    }
+                  ]
+                },
+                {
+                  "folded": true,
+                  "type": "structure",
+                  "children": [
+                    {
+                      "folded": true,
+                      "name": "Name",
+                      "type": "string",
+                      "value": "Phoenix"
+                    },
+                    {
+                      "folded": true,
+                      "name": "Value",
+                      "type": "string",
+                      "value": "Mr. Jayoma, your client has expressed significant concerns about the impact of these accusations on his personal and professional life."
                     }
                   ]
                 },
@@ -285,23 +373,7 @@
                     {
                       "name": "Value",
                       "type": "string",
-                      "value": "I've been falsely accused of sexual harrasement and the lady made it a public case."
-                    }
-                  ]
-                },
-                {
-                  "folded": true,
-                  "type": "structure",
-                  "children": [
-                    {
-                      "name": "Name",
-                      "type": "string",
-                      "value": "Phoenix"
-                    },
-                    {
-                      "name": "Value",
-                      "type": "string",
-                      "value": "Mr Jayoma please do everything you can to save my reputation sir."
+                      "value": "Please proceed with your opening statements, ensuring that these proceedings are conducted with the utmost respect and decorum."
                     }
                   ]
                 }
@@ -311,7 +383,7 @@
               "folded": true,
               "name": "Length",
               "type": "number",
-              "value": 4
+              "value": 6
             }
           ]
         },
@@ -338,7 +410,58 @@
                       "folded": true,
                       "name": "Value",
                       "type": "string",
-                      "value": "Thanks for clarifying Mr. Jayoma. We trust that the jury will do you justice."
+                      "value": "The court appreciates your thorough presentation, Mr. Jayoma."
+                    }
+                  ]
+                },
+                {
+                  "folded": true,
+                  "type": "structure",
+                  "children": [
+                    {
+                      "name": "Name",
+                      "type": "string",
+                      "value": "Phoenix"
+                    },
+                    {
+                      "folded": true,
+                      "name": "Value",
+                      "type": "string",
+                      "value": "The jury has reached a verdict."
+                    }
+                  ]
+                },
+                {
+                  "folded": true,
+                  "type": "structure",
+                  "children": [
+                    {
+                      "name": "Name",
+                      "type": "string",
+                      "value": "Phoenix"
+                    },
+                    {
+                      "folded": true,
+                      "name": "Value",
+                      "type": "string",
+                      "value": "They find in favor of the defendant, clearing him of all charges."
+                    }
+                  ]
+                },
+                {
+                  "folded": true,
+                  "type": "structure",
+                  "children": [
+                    {
+                      "name": "Name",
+                      "type": "string",
+                      "value": "Phoenix"
+                    },
+                    {
+                      "folded": true,
+                      "name": "Value",
+                      "type": "string",
+                      "value": "We trust that justice has been served."
                     }
                   ]
                 }
@@ -347,7 +470,7 @@
             {
               "name": "Length",
               "type": "number",
-              "value": 1
+              "value": 4
             }
           ]
         }
