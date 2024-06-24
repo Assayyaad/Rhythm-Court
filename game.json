@@ -103,8 +103,8 @@
         "metadata": "",
         "name": "Correct",
         "preloadAsMusic": false,
-        "preloadAsSound": false,
-        "preloadInCache": false,
+        "preloadAsSound": true,
+        "preloadInCache": true,
         "userAdded": false
       },
       {
@@ -113,8 +113,8 @@
         "metadata": "",
         "name": "Wrong",
         "preloadAsMusic": false,
-        "preloadAsSound": false,
-        "preloadInCache": false,
+        "preloadAsSound": true,
+        "preloadInCache": true,
         "userAdded": true
       },
       {
@@ -123,8 +123,8 @@
         "metadata": "",
         "name": "Miss",
         "preloadAsMusic": false,
-        "preloadAsSound": false,
-        "preloadInCache": false,
+        "preloadAsSound": true,
+        "preloadInCache": true,
         "userAdded": true
       },
       {
@@ -1227,15 +1227,15 @@
   "layouts": [
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/start-screen"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/game"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/game2"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/start-screen"
     }
   ],
   "externalEvents": [],

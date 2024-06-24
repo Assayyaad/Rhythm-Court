@@ -66,12 +66,6 @@
   "variables": [
     {
       "folded": true,
-      "name": "Spawn",
-      "type": "boolean",
-      "value": false
-    },
-    {
-      "folded": true,
       "name": "Miss",
       "type": "boolean",
       "value": false
@@ -157,6 +151,7 @@
           "value": 0
         },
         {
+          "folded": true,
           "name": "Lose",
           "type": "structure",
           "children": [
@@ -227,6 +222,7 @@
           ]
         },
         {
+          "folded": true,
           "name": "Middle",
           "type": "structure",
           "children": [
@@ -236,6 +232,7 @@
               "type": "array",
               "children": [
                 {
+                  "folded": true,
                   "type": "structure",
                   "children": [
                     {
@@ -262,6 +259,7 @@
           ]
         },
         {
+          "folded": true,
           "name": "Start",
           "type": "structure",
           "children": [
@@ -350,6 +348,7 @@
           ]
         },
         {
+          "folded": true,
           "name": "Win",
           "type": "structure",
           "children": [
@@ -831,44 +830,15 @@
               ]
             }
           ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
-              },
-              "parameters": [
-                "Background",
-                "Animation",
-                "=",
-                "0"
-              ]
-            }
-          ]
         }
       ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Comment",
-      "color": {
-        "b": 109,
-        "g": 230,
-        "r": 255,
-        "textB": 0,
-        "textG": 0,
-        "textR": 0
-      },
-      "comment": "Game Loop"
     },
     {
       "colorB": 228,
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "name": "Update",
+      "name": "Logic Loop",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
@@ -889,7 +859,6 @@
           ]
         },
         {
-          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -921,19 +890,6 @@
                 "JudjmentLine",
                 "\"Notes\""
               ]
-            }
-          ],
-          "events": [
-            {
-              "colorB": 228,
-              "colorG": 176,
-              "colorR": 74,
-              "creationTime": 0,
-              "name": "Story Loop",
-              "source": "",
-              "type": "BuiltinCommonInstructions::Group",
-              "events": [],
-              "parameters": []
             }
           ]
         },
@@ -977,7 +933,7 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "name": "Beat Loop",
+              "name": "Spawn Notes",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
               "events": [
@@ -1021,16 +977,6 @@
                       "actions": [
                         {
                           "type": {
-                            "value": "SetBooleanVariable"
-                          },
-                          "parameters": [
-                            "Spawn",
-                            "True",
-                            "0"
-                          ]
-                        },
-                        {
-                          "type": {
                             "value": "SetNumberVariable"
                           },
                           "parameters": [
@@ -1046,6 +992,41 @@
                           "parameters": [
                             "",
                             "\"Beat\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "Note",
+                            "0",
+                            "0",
+                            "\"Notes\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "MettreXY"
+                          },
+                          "parameters": [
+                            "Note",
+                            "=",
+                            "Note.startPos.x",
+                            "=",
+                            "Note.startPos.y"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "AddForceXY"
+                          },
+                          "parameters": [
+                            "Note",
+                            "Note.speed",
+                            "0",
+                            "1"
                           ]
                         }
                       ]
@@ -1108,227 +1089,183 @@
                       ]
                     }
                   ]
+                }
+              ],
+              "parameters": []
+            },
+            {
+              "colorB": 228,
+              "colorG": 176,
+              "colorR": 74,
+              "creationTime": 0,
+              "name": "Delete Notes",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "ObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "Note",
+                        "touched",
+                        "False"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Note",
+                        "JudjmentLine",
+                        "",
+                        "",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "Note",
+                        "touched",
+                        "True"
+                      ]
+                    }
+                  ]
                 },
                 {
                   "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [],
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "ObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "Note",
+                        "touched",
+                        "True"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Note",
+                        "JudjmentLine",
+                        "",
+                        "",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "Note",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PlaySound"
+                      },
+                      "parameters": [
+                        "",
+                        "Miss",
+                        "2",
+                        "100",
+                        "RandomFloatInRange(0.9, 1.1)"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
+                      },
+                      "parameters": [
+                        "BlueBar",
+                        "-",
+                        "1",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetBooleanVariable"
+                      },
+                      "parameters": [
+                        "Miss",
+                        "True",
+                        ""
+                      ]
+                    }
+                  ],
                   "events": [
                     {
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
                           "type": {
-                            "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::Value"
+                            "value": "SceneInstancesCount"
                           },
                           "parameters": [
-                            "BlueBar",
+                            "",
+                            "Note",
+                            "=",
+                            "0"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "NumberVariable"
+                          },
+                          "parameters": [
+                            "Beat.Index",
                             ">=",
-                            "BlueBar.MaxValue() * 0.75",
-                            ""
+                            "Beat.Length"
                           ]
-                        },
-                        {
-                          "type": {
-                            "value": "BuiltinCommonInstructions::Once"
-                          },
-                          "parameters": []
                         }
                       ],
                       "actions": [
                         {
                           "type": {
+                            "value": "SetBooleanVariable"
+                          },
+                          "parameters": [
+                            "Miss",
+                            "False",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
                             "value": "SetNumberVariable"
                           },
                           "parameters": [
-                            "Story.Index",
+                            "Beat.Index",
                             "=",
                             "0"
                           ]
                         },
                         {
                           "type": {
-                            "value": "SetStringVariable"
+                            "value": "ResetTimer"
                           },
                           "parameters": [
-                            "Stories",
-                            "=",
-                            "\"Middle\""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "SetStringVariable"
-                          },
-                          "parameters": [
-                            "LevelState",
-                            "=",
-                            "\"Story\""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "DialogBox::DialogBoxBackGround::Open"
-                          },
-                          "parameters": [
-                            "DialogueBg",
-                            "DialogBoxBackGround",
-                            "Story[Stories].Dialogues[Story.Index].Name",
-                            "Story[Stories].Dialogues[Story.Index].Name",
-                            "Story[Stories].Dialogues[Story.Index].Value",
-                            ""
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::Value"
-                          },
-                          "parameters": [
-                            "BlueBar",
-                            "=",
-                            "BlueBar.MaxValue()",
-                            ""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "BuiltinCommonInstructions::Once"
-                          },
-                          "parameters": []
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "SetNumberVariable"
-                          },
-                          "parameters": [
-                            "Story.Index",
-                            "=",
-                            "0"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "SetStringVariable"
-                          },
-                          "parameters": [
-                            "Stories",
-                            "=",
-                            "\"Win\""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "SetStringVariable"
-                          },
-                          "parameters": [
-                            "LevelState",
-                            "=",
-                            "\"Story\""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "DialogBox::DialogBoxBackGround::Open"
-                          },
-                          "parameters": [
-                            "DialogueBg",
-                            "DialogBoxBackGround",
-                            "Story[Stories].Dialogues[Story.Index].Name",
-                            "Story[Stories].Dialogues[Story.Index].Name",
-                            "Story[Stories].Dialogues[Story.Index].Value",
-                            ""
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::Value"
-                          },
-                          "parameters": [
-                            "BlueBar",
-                            "=",
-                            "0",
-                            ""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "BuiltinCommonInstructions::Once"
-                          },
-                          "parameters": []
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "SetNumberVariable"
-                          },
-                          "parameters": [
-                            "Story.Index",
-                            "=",
-                            "0"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "SetStringVariable"
-                          },
-                          "parameters": [
-                            "Stories",
-                            "=",
-                            "\"Lose\""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "SetStringVariable"
-                          },
-                          "parameters": [
-                            "LevelState",
-                            "=",
-                            "\"Story\""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "DialogBox::DialogBoxBackGround::Open"
-                          },
-                          "parameters": [
-                            "DialogueBg",
-                            "DialogBoxBackGround",
-                            "Story[Stories].Dialogues[Story.Index].Name",
-                            "Story[Stories].Dialogues[Story.Index].Name",
-                            "Story[Stories].Dialogues[Story.Index].Value",
-                            ""
-                          ]
-                        }
-                      ],
-                      "events": [
-                        {
-                          "type": "BuiltinCommonInstructions::ForEach",
-                          "object": "Note",
-                          "conditions": [],
-                          "actions": [
-                            {
-                              "type": {
-                                "value": "Delete"
-                              },
-                              "parameters": [
-                                "Note",
-                                ""
-                              ]
-                            }
+                            "",
+                            "\"Beat\""
                           ]
                         }
                       ]
@@ -1344,7 +1281,7 @@
               "colorR": 74,
               "creationTime": 0,
               "folded": true,
-              "name": "Spawning",
+              "name": "Story Transition",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
               "events": [
@@ -1353,59 +1290,236 @@
                   "conditions": [
                     {
                       "type": {
-                        "value": "BooleanVariable"
+                        "value": "StringVariable"
                       },
                       "parameters": [
-                        "Spawn",
-                        "True",
-                        "Beat.length"
+                        "Stories",
+                        "=",
+                        "\"Start\""
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::Value"
+                      },
+                      "parameters": [
+                        "BlueBar",
+                        ">=",
+                        "BlueBar.MaxValue() * 0.75",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
                     }
                   ],
                   "actions": [
                     {
                       "type": {
-                        "value": "Create"
+                        "value": "SetNumberVariable"
                       },
                       "parameters": [
-                        "",
-                        "Note",
-                        "0",
-                        "0",
-                        "\"Notes\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "MettreXY"
-                      },
-                      "parameters": [
-                        "Note",
+                        "Story.Index",
                         "=",
-                        "Note.startPos.x",
-                        "=",
-                        "Note.startPos.y"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "AddForceXY"
-                      },
-                      "parameters": [
-                        "Note",
-                        "Note.speed",
-                        "0",
-                        "1"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetBooleanVariable"
-                      },
-                      "parameters": [
-                        "Spawn",
-                        "False",
                         "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetStringVariable"
+                      },
+                      "parameters": [
+                        "Stories",
+                        "=",
+                        "\"Middle\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetStringVariable"
+                      },
+                      "parameters": [
+                        "LevelState",
+                        "=",
+                        "\"Story\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "DialogBox::DialogBoxBackGround::ChangeNameImageText"
+                      },
+                      "parameters": [
+                        "DialogueBg",
+                        "DialogBoxBackGround",
+                        "Story[Stories].Dialogues[Story.Index].Name",
+                        "Story[Stories].Dialogues[Story.Index].Name",
+                        "Story[Stories].Dialogues[Story.Index].Value",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "StringVariable"
+                      },
+                      "parameters": [
+                        "Stories",
+                        "=",
+                        "\"Middle\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::Value"
+                      },
+                      "parameters": [
+                        "BlueBar",
+                        "=",
+                        "BlueBar.MaxValue()",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Story.Index",
+                        "=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetStringVariable"
+                      },
+                      "parameters": [
+                        "Stories",
+                        "=",
+                        "\"Win\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetStringVariable"
+                      },
+                      "parameters": [
+                        "LevelState",
+                        "=",
+                        "\"Story\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "DialogBox::DialogBoxBackGround::ChangeNameImageText"
+                      },
+                      "parameters": [
+                        "DialogueBg",
+                        "DialogBoxBackGround",
+                        "Story[Stories].Dialogues[Story.Index].Name",
+                        "Story[Stories].Dialogues[Story.Index].Name",
+                        "Story[Stories].Dialogues[Story.Index].Value",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::Value"
+                      },
+                      "parameters": [
+                        "BlueBar",
+                        "=",
+                        "0",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Story.Index",
+                        "=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetStringVariable"
+                      },
+                      "parameters": [
+                        "Stories",
+                        "=",
+                        "\"Lose\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetStringVariable"
+                      },
+                      "parameters": [
+                        "LevelState",
+                        "=",
+                        "\"Story\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "DialogBox::DialogBoxBackGround::ChangeNameImageText"
+                      },
+                      "parameters": [
+                        "DialogueBg",
+                        "DialogBoxBackGround",
+                        "Story[Stories].Dialogues[Story.Index].Name",
+                        "Story[Stories].Dialogues[Story.Index].Name",
+                        "Story[Stories].Dialogues[Story.Index].Value",
+                        ""
+                      ]
+                    }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::ForEach",
+                      "object": "Note",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Delete"
+                          },
+                          "parameters": [
+                            "Note",
+                            ""
+                          ]
+                        }
                       ]
                     }
                   ]
@@ -1564,26 +1678,6 @@
                       "actions": [
                         {
                           "type": {
-                            "value": "DialogBox::DialogBoxBackGround::Close"
-                          },
-                          "parameters": [
-                            "DialogueBg",
-                            "DialogBoxBackGround",
-                            ""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "SetBooleanVariable"
-                          },
-                          "parameters": [
-                            "Miss",
-                            "False",
-                            ""
-                          ]
-                        },
-                        {
-                          "type": {
                             "value": "SetNumberVariable"
                           },
                           "parameters": [
@@ -1591,34 +1685,135 @@
                             "=",
                             "0"
                           ]
-                        },
+                        }
+                      ],
+                      "events": [
                         {
-                          "type": {
-                            "value": "SetNumberVariable"
-                          },
-                          "parameters": [
-                            "Beat.Index",
-                            "=",
-                            "0"
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::Or"
+                              },
+                              "parameters": [],
+                              "subInstructions": [
+                                {
+                                  "type": {
+                                    "value": "StringVariable"
+                                  },
+                                  "parameters": [
+                                    "Stories",
+                                    "=",
+                                    "\"Start\""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "StringVariable"
+                                  },
+                                  "parameters": [
+                                    "Stories",
+                                    "=",
+                                    "\"Middle\""
+                                  ]
+                                }
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "SetBooleanVariable"
+                              },
+                              "parameters": [
+                                "Miss",
+                                "False",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "SetNumberVariable"
+                              },
+                              "parameters": [
+                                "Beat.Index",
+                                "=",
+                                "0"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "SetStringVariable"
+                              },
+                              "parameters": [
+                                "LevelState",
+                                "=",
+                                "\"Beat\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ResetTimer"
+                              },
+                              "parameters": [
+                                "",
+                                "\"Beat\""
+                              ]
+                            }
                           ]
                         },
                         {
-                          "type": {
-                            "value": "SetStringVariable"
-                          },
-                          "parameters": [
-                            "LevelState",
-                            "=",
-                            "\"Beat\""
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "StringVariable"
+                              },
+                              "parameters": [
+                                "Stories",
+                                "=",
+                                "\"Win\""
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "Scene"
+                              },
+                              "parameters": [
+                                "",
+                                "\"Game2\"",
+                                ""
+                              ]
+                            }
                           ]
                         },
                         {
-                          "type": {
-                            "value": "ResetTimer"
-                          },
-                          "parameters": [
-                            "",
-                            "\"Beat\""
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "StringVariable"
+                              },
+                              "parameters": [
+                                "Stories",
+                                "=",
+                                "\"Lose\""
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "Scene"
+                              },
+                              "parameters": [
+                                "",
+                                "\"Start Screen\"",
+                                ""
+                              ]
+                            }
                           ]
                         }
                       ]
@@ -1694,158 +1889,88 @@
                             "=",
                             "0"
                           ]
-                        },
-                        {
-                          "type": {
-                            "value": "BooleanVariable"
-                          },
-                          "parameters": [
-                            "Miss",
-                            "False",
-                            ""
-                          ]
                         }
                       ],
-                      "actions": [
+                      "actions": [],
+                      "events": [
                         {
-                          "type": {
-                            "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
-                          },
-                          "parameters": [
-                            "BlueBar",
-                            "+",
-                            "Beat.Damage",
-                            ""
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "BooleanVariable"
+                              },
+                              "parameters": [
+                                "Miss",
+                                "False",
+                                ""
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
+                              },
+                              "parameters": [
+                                "BlueBar",
+                                "+",
+                                "Beat.Damage",
+                                ""
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "NumberVariable"
+                              },
+                              "parameters": [
+                                "Beat.Index",
+                                ">=",
+                                "Beat.Length"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "SetBooleanVariable"
+                              },
+                              "parameters": [
+                                "Miss",
+                                "False",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "SetNumberVariable"
+                              },
+                              "parameters": [
+                                "Beat.Index",
+                                "=",
+                                "0"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ResetTimer"
+                              },
+                              "parameters": [
+                                "",
+                                "\"Beat\""
+                              ]
+                            }
                           ]
                         }
                       ]
                     }
                   ]
                 }
-              ]
-            }
-          ]
-        }
-      ],
-      "parameters": []
-    },
-    {
-      "colorB": 228,
-      "colorG": 176,
-      "colorR": 74,
-      "creationTime": 0,
-      "folded": true,
-      "name": "Delete Notes",
-      "source": "",
-      "type": "BuiltinCommonInstructions::Group",
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "ObjectVariableAsBoolean"
-              },
-              "parameters": [
-                "Note",
-                "touched",
-                "False"
-              ]
-            },
-            {
-              "type": {
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "Note",
-                "JudjmentLine",
-                "",
-                "",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetObjectVariableAsBoolean"
-              },
-              "parameters": [
-                "Note",
-                "touched",
-                "True"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "ObjectVariableAsBoolean"
-              },
-              "parameters": [
-                "Note",
-                "touched",
-                "True"
-              ]
-            },
-            {
-              "type": {
-                "inverted": true,
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "Note",
-                "JudjmentLine",
-                "",
-                "",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "Note",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "PlaySound"
-              },
-              "parameters": [
-                "",
-                "Miss",
-                "2",
-                "100",
-                "RandomFloatInRange(0.9, 1.1)"
-              ]
-            },
-            {
-              "type": {
-                "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
-              },
-              "parameters": [
-                "BlueBar",
-                "-",
-                "1",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "SetBooleanVariable"
-              },
-              "parameters": [
-                "Miss",
-                "True",
-                ""
               ]
             }
           ]
