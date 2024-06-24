@@ -1,8 +1,8 @@
 {
   "b": 209,
   "disableInputWhenNotFocused": true,
-  "mangledName": "Start_32Screen",
-  "name": "Start Screen",
+  "mangledName": "Main_32Menu",
+  "name": "Main Menu",
   "r": 209,
   "standardSortMethod": true,
   "stopSoundsOnStartup": true,
@@ -342,7 +342,18 @@
           ]
         }
       ],
-      "actions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "SetFullScreen"
+          },
+          "parameters": [
+            "",
+            "yes",
+            ""
+          ]
+        }
+      ],
       "events": [
         {
           "type": "BuiltinCommonInstructions::Standard",

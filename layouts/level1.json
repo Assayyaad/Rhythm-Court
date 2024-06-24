@@ -77,26 +77,20 @@
       "value": "Start"
     },
     {
-      "folded": true,
       "name": "Beat",
       "type": "structure",
       "children": [
         {
-          "name": "Damage",
+          "folded": true,
+          "name": "Index",
           "type": "number",
           "value": 1
         },
         {
           "folded": true,
-          "name": "Index",
-          "type": "number",
-          "value": 0
-        },
-        {
-          "folded": true,
           "name": "Length",
           "type": "number",
-          "value": 7
+          "value": 15
         },
         {
           "name": "Notes",
@@ -105,32 +99,72 @@
             {
               "folded": true,
               "type": "number",
-              "value": 1
+              "value": 0.5
             },
             {
               "folded": true,
               "type": "number",
-              "value": 0.4
-            },
-            {
-              "folded": true,
-              "type": "number",
-              "value": 0.4
-            },
-            {
-              "folded": true,
-              "type": "number",
-              "value": 0.8
-            },
-            {
-              "folded": true,
-              "type": "number",
-              "value": 1
+              "value": 0.5
             },
             {
               "folded": true,
               "type": "number",
               "value": 0.6
+            },
+            {
+              "folded": true,
+              "type": "number",
+              "value": 0.6
+            },
+            {
+              "folded": true,
+              "type": "number",
+              "value": 0.7
+            },
+            {
+              "folded": true,
+              "type": "number",
+              "value": 0.7
+            },
+            {
+              "folded": true,
+              "type": "number",
+              "value": 0.6
+            },
+            {
+              "folded": true,
+              "type": "number",
+              "value": 0.6
+            },
+            {
+              "folded": true,
+              "type": "number",
+              "value": 0.5
+            },
+            {
+              "folded": true,
+              "type": "number",
+              "value": 0.5
+            },
+            {
+              "folded": true,
+              "type": "number",
+              "value": 0.4
+            },
+            {
+              "folded": true,
+              "type": "number",
+              "value": 0.4
+            },
+            {
+              "folded": true,
+              "type": "number",
+              "value": 0.3
+            },
+            {
+              "folded": true,
+              "type": "number",
+              "value": 0.3
             },
             {
               "folded": true,
@@ -348,17 +382,14 @@
           ]
         },
         {
-          "folded": true,
           "name": "Win",
           "type": "structure",
           "children": [
             {
-              "folded": true,
               "name": "Dialogues",
               "type": "array",
               "children": [
                 {
-                  "folded": true,
                   "type": "structure",
                   "children": [
                     {
@@ -656,36 +687,7 @@
   },
   "events": [
     {
-      "type": "BuiltinCommonInstructions::Comment",
-      "color": {
-        "b": 109,
-        "g": 230,
-        "r": 255,
-        "textB": 0,
-        "textG": 0,
-        "textR": 0
-      },
-      "comment": "Initialisation"
-    },
-    {
-      "disabled": true,
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": [
-        {
-          "type": {
-            "value": "SetWindowSize"
-          },
-          "parameters": [
-            "",
-            "960",
-            "540",
-            ""
-          ]
-        }
-      ]
-    },
-    {
+      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -1271,7 +1273,6 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "folded": true,
               "name": "Story Transition",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -1801,7 +1802,7 @@
                               },
                               "parameters": [
                                 "",
-                                "\"Start Screen\"",
+                                "\"Main Menu\"",
                                 ""
                               ]
                             }
@@ -1906,7 +1907,7 @@
                               "parameters": [
                                 "BlueBar",
                                 "+",
-                                "Beat.Damage",
+                                "1",
                                 ""
                               ]
                             }

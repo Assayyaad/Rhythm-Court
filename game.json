@@ -1520,7 +1520,7 @@
   "layouts": [
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/start-screen"
+      "referenceTo": "/layouts/main-menu"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
