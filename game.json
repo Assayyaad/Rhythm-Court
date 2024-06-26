@@ -21,7 +21,7 @@
     "useExternalSourceFiles": false,
     "version": "1.0.0",
     "name": "Rhythm Court",
-    "description": "",
+    "description": "A mix of rhythm and visual novels",
     "author": "Assayyaad",
     "windowWidth": 1920,
     "windowHeight": 1080,
@@ -80,13 +80,20 @@
       "showWatermark": false
     },
     "authorIds": [
-      "P2R4bcPNinTzpRBIMn932XX2NOg2"
+      "P2R4bcPNinTzpRBIMn932XX2NOg2",
+      "Qdfnlgo0tYRgpRjKEyHktAVSmNS2"
     ],
     "authorUsernames": [
-      "nabil_alsaiad"
+      "nabil_alsaiad",
+      "AbdullahBakhsh"
     ],
-    "categories": [],
-    "playableDevices": [],
+    "categories": [
+      "story-rich",
+      "rpg"
+    ],
+    "playableDevices": [
+      "keyboard"
+    ],
     "extensionProperties": [],
     "platforms": [
       {
